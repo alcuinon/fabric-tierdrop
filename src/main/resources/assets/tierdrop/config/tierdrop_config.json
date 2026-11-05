@@ -1,0 +1,2499 @@
+{
+  "Comments": {
+    "note": "Please use this guide to avoid errors, copy paste the value here. use Test so that it will override and takes priority in drops",
+    "tips": "If you want to reset this json file, then delete this config and it will generate again once you restart the game or server.",
+    "attribute_slot": ["All", "HEAD", "CHEST", "LEGS", "FEET", "MAINHAND"],
+    "attributes": [
+      "ARMOR",
+      "ARMOR_TOUGHNESS",
+      "ATTACK_DAMAGE",
+      "ATTACK_KNOCKBACK",
+      "ATTACK_SPEED",
+      "BLOCK_BREAK_SPEED",
+      "BLOCK_INTERACTION_RANGE",
+      "BURNING_TIME",
+      "CAMERA_DISTANCE",
+      "EXPLOSION_KNOCKBACK_RESISTANCE",
+      "ENTITY_INTERACTION_RANGE",
+      "FALL_DAMAGE_MULTIPLIER",
+      "FLYING_SPEED",
+      "FOLLOW_RANGE",
+      "GRAVITY",
+      "JUMP_STRENGTH",
+      "KNOCKBACK_RESISTANCE",
+      "LUCK",
+      "MAX_ABSORPTION",
+      "MAX_HEALTH",
+      "MINING_EFFICIENCY",
+      "MOVEMENT_EFFICIENCY",
+      "MOVEMENT_SPEED",
+      "OXYGEN_BONUS",
+      "SAFE_FALL_DISTANCE",
+      "SCALE",
+      "SNEAKING_SPEED",
+      "SPAWN_REINFORCEMENTS_CHANCE",
+      "STEP_HEIGHT",
+      "SUBMERGED_MINING_SPEED",
+      "SWEEPING_DAMAGE_RATIO",
+      "TEMPT_RANGE",
+      "WATER_MOVEMENT_EFFICIENCY",
+      "WAYPOINT_TRANSMIT_RANGE",
+      "WAYPOINT_RECEIVE_RANGE"
+    ],
+    "chance": [
+      "1st value is normal drop",
+      "2nd value is chest drop chance",
+      "3rd value is Treasure drop"
+    ],
+    "effects": "Soon!!"
+  },
+  "TierEquipment": {
+    "ApplyTiersOnCraftedEquipments": false,
+    "AllowCraftedEquipmentsToGetHighTiers": false,
+    "Test": [
+
+    ],
+    "Armor": [
+      {
+        "prefix": "Worn",
+        "color": "#B0B0B0",
+        "chance": [120, 0, 0],
+        "attributes": [
+          {
+            "ALL": ["ARMOR", 0.5, 1.0]
+          }
+        ]
+      },
+      {
+        "prefix": "Sturdy",
+        "color": "#4FF04F",
+        "chance": [80, 0, 0],
+        "attributes": [
+          { "ALL": ["ARMOR", 1.0, 1.5] },
+          { "ALL": ["MAX_HEALTH", 1.0, 2.0] }
+        ]
+      },
+      {
+        "prefix": "Forged",
+        "color": "#55AAFF",
+        "chance": [60, 40, 0],
+        "attributes": [
+          {
+            "ALL": ["ARMOR", 1.5, 2.5]
+          },
+          {
+            "ALL": ["MAX_HEALTH", 2.0, 4.0]
+          }
+        ]
+      },
+      {
+        "prefix": "Epic",
+        "color": "#BF55FF",
+        "chance": [30, 20, 10],
+        "attributes": [
+          {
+            "ALL": ["ARMOR", 2.5, 4.0]
+          },
+          {
+            "ALL": ["MAX_HEALTH", 4.0, 8.0]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 1.0, 2.0]
+          }
+        ]
+      },
+      {
+        "prefix": "Legendary",
+        "color": "#FFD700",
+        "chance": [1, 5, 5],
+        "attributes": [
+          {
+            "ALL": ["ARMOR", 3.0, 6.0]
+          },
+          {
+            "ALL": ["MAX_HEALTH", 8.0, 10.0]
+          },
+          {
+            "HEAD": ["LUCK", 2.0, 3.0]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 2.0, 4.0]
+          }
+        ],
+        "particles": [
+          { "type": "wax_on", "chance": 0.07 },
+          { "type": "electric_spark", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Cat's Grace",
+        "color": "#22FFDD",
+        "chance": [0, 10, 10],
+        "attributes": [
+          {
+            "FEET": ["SAFE_FALL_DISTANCE", 5.0, 12.0]
+          }
+        ],
+        "particles": [
+          { "type": "end_rod", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Nimble",
+        "color": "#22FFDD",
+        "chance": [0, 10, 10],
+        "attributes": [
+          {
+            "FEET": ["MOVEMENT_SPEED", 0.01, 0.03]
+          },
+          {
+            "FEET": ["SNEAKING_SPEED", 0.03, 0.05]
+          }
+        ],
+        "particles": [
+          { "type": "firework", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Gale's Blessing",
+        "color": "#77CCFF",
+        "chance": [0, 10, 10],
+        "attributes": [
+          {
+            "LEGS": ["FLYING_SPEED", 0.05, 0.1]
+          },
+          {
+            "LEGS": ["JUMP_STRENGTH", 0.1, 0.2]
+          }
+        ],
+        "particles": [
+          { "type": "firework", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Shadowstep",
+        "color": "#9D31FF",
+        "chance": [0, 10, 10],
+        "attributes": [
+          {
+            "LEGS": ["SNEAKING_SPEED", 0.15, 0.2]
+          },
+          {
+            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+          }
+        ],
+        "particles": [
+          { "type": "nautilus", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Oceanskin",
+        "color": "#00CED1",
+        "chance": [0, 10, 10],
+        "attributes": [
+          {
+            "FEET": ["WATER_MOVEMENT_EFFICIENCY", 0.3, 0.6]
+          },
+          {
+            "FEET": ["OXYGEN_BONUS", 1.0, 3.0]
+          }
+        ],
+        "particles": [
+          { "type": "bubble_pop", "chance": 0.07 },
+          { "type": "current_down", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Astral Grasp",
+        "color": "#FFD700",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.5, 2.5]
+          },
+          {
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.5, 2.5]
+          }
+        ],
+        "particles": [
+          { "type": "composter", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Immovable",
+        "color": "#808080",
+        "chance": [0, 10, 10],
+        "attributes": [
+          {
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.2, 0.5]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 2.0, 4.0]
+          }
+        ],
+        "particles": [
+          { "type": "ash", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Titan",
+        "color": "#FF44FF",
+        "chance": [0, 5, 5],
+        "attributes": [
+          {
+            "HEAD": ["SCALE", 0.03, 0.05]
+          },
+          {
+            "CHEST": ["SCALE", 0.15, 0.25]
+          },
+          {
+            "LEGS": ["SCALE", 0.03, 0.05]
+          },
+          {
+            "FEET": ["SCALE", 0.03, 0.05]
+          },
+          {
+            "ALL": ["MAX_HEALTH", 8.0, 10.0]
+          },
+          {
+            "ALL": ["ATTACK_DAMAGE", 1.0, 2.0]
+          },
+          {
+            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+          },
+          {
+            "FEET": ["MOVEMENT_SPEED", -0.01, -0.01]
+          }
+        ],
+        "particles": [
+          { "type": "dust_plume", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Glass Cannon",
+        "color": "#FF3333",
+        "chance": [0, 15, 15],
+        "attributes": [
+          {
+            "ALL": ["ATTACK_DAMAGE", 1.5, 3.0]
+          },
+          {
+            "ALL": ["ATTACK_SPEED", 0.2, 0.4]
+          },
+          {
+            "ALL": ["MAX_HEALTH", -4.0, -2.0]
+          },
+          {
+            "ALL": ["ARMOR", -2.0, -1.0]
+          }
+        ],
+        "particles": [
+          { "type": "trial_spawner_detection", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Featherweight",
+        "color": "#FFFFFF",
+        "chance": [0, 20, 15],
+        "attributes": [
+          {
+            "ALL": ["MOVEMENT_SPEED", 0.01, 0.03]
+          },
+          {
+            "ALL": ["JUMP_STRENGTH", 0.1, 0.2]
+          },
+          {
+            "ALL": ["SAFE_FALL_DISTANCE", 4.0, 6.0]
+          },
+          {
+            "ALL": ["KNOCKBACK_RESISTANCE", -0.5, -0.3]
+          }
+        ],
+        "particles": [
+          { "type": "pale_oak_leaves", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Dreadnought",
+        "color": "#BF55FF",
+        "chance": [0, 5, 20],
+        "attributes": [
+          {
+            "ALL": ["MAX_ABSORPTION", 4.0, 10.0]
+          },
+          {
+            "ALL": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.5, 0.8]
+          },
+          {
+            "ALL": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Scout",
+        "color": "#4FF04F",
+        "chance": [0, 25, 10],
+        "attributes": [
+          {
+            "ALL": ["SNEAKING_SPEED", 0.2, 0.4]
+          },
+          {
+            "ALL": ["FOLLOW_RANGE", -10.0, -5.0]
+          },
+          {
+            "ALL": ["STEP_HEIGHT", 0.5, 1.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Giant",
+        "color": "#FFAA00",
+        "chance": [0, 5, 15],
+        "attributes": [
+          {
+            "ALL": ["SCALE", 0.05, 0.15]
+          },
+          {
+            "ALL": ["MAX_HEALTH", 2.0, 8.0]
+          },
+          {
+            "ALL": ["BLOCK_INTERACTION_RANGE", 1.5, 3.0]
+          },
+          {
+            "ALL": ["ENTITY_INTERACTION_RANGE", 1.5, 2.5]
+          }
+        ],
+        "particles": [
+          { "type": "infested", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Berserker",
+        "color": "#FF2222",
+        "chance": [0, 10, 20],
+        "attributes": [
+          {
+            "ALL": ["ATTACK_DAMAGE", 1.5, 3.0]
+          },
+          {
+            "ALL": ["MOVEMENT_SPEED", 0.01, 0.02]
+          },
+          {
+            "ALL": ["ARMOR_TOUGHNESS", -4.0, -2.0]
+          }
+        ],
+        "particles": [
+          { "type": "raid_omen", "chance": 0.07 },
+          { "type": "crimson_spore", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Unstable Artifact",
+        "color": "#FF77FF",
+        "chance": [0, 0, 10],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 4.0, 12.0]
+          },
+          {
+            "ALL": ["GRAVITY", -0.03, -0.01]
+          },
+          {
+            "ALL": ["FALL_DAMAGE_MULTIPLIER", 1.5, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "crimson_spore", "chance": 0.07 },
+          { "type": "cherry_leaves", "chance": 0.04 },
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Scholar",
+        "color": "#55AAFF",
+        "chance": [0, 30, 10],
+        "attributes": [
+          {
+            "HEAD": ["LUCK", 1.0, 3.0]
+          },
+          {
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 0.5, 1.5]
+          }
+        ],
+        "particles": [
+          { "type": "reverse_portal", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Telepath",
+        "color": "#FF77FF",
+        "chance": [0, 5, 5],
+        "attributes": [
+          {
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 2.0, 4.0]
+          },
+          {
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.0, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.07 },
+          { "type": "portal", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Oracle",
+        "color": "#FFD700",
+        "chance": [0, 5, 15],
+        "attributes": [
+          {
+            "HEAD": ["LUCK", 5.0, 10.0]
+          },
+          {
+            "HEAD": ["MAX_ABSORPTION", 2.0, 12.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.07 },
+          { "type": "portal", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Warden's Brow",
+        "color": "#808080",
+        "chance": [0, 15, 30],
+        "attributes": [
+          {
+            "HEAD": ["ARMOR", 3.0, 5.0]
+          },
+          {
+            "HEAD": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+          }
+        ],
+        "particles": [
+          { "type": "glow", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Bulwark",
+        "color": "#B0B0B0",
+        "chance": [0, 15, 30],
+        "attributes": [
+          {
+            "CHEST": ["ARMOR", 6.0, 10.0]
+          },
+          {
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.5, 0.8]
+          }
+        ],
+        "particles": [
+          { "type": "infested", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Thornplate",
+        "color": "#FF3333",
+        "chance": [0, 15, 10],
+        "attributes": [
+          {
+            "CHEST": ["ATTACK_DAMAGE", 1.0, 2.0]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 1.0, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "infested", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Shockweave",
+        "color": "#FFFF55",
+        "chance": [0, 10, 20],
+        "attributes": [
+          {
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.8, 1.0]
+          },
+          {
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+          }
+        ],
+        "particles": [
+          { "type": "electric_spark", "chance": 0.1 }
+        ]
+      },
+      {
+        "prefix": "Lifewarden",
+        "color": "#4FF04F",
+        "chance": [0, 10, 15],
+        "attributes": [
+          {
+            "CHEST": ["MAX_ABSORPTION", 6.0, 12.0]
+          },
+          {
+            "CHEST": ["MAX_HEALTH", 2.0, 4.0]
+          }
+        ],
+        "particles": [
+          { "type": "sculk_charge_pop", "chance": 0.07 }
+        ]
+      },
+      {
+        "prefix": "Void Heart",
+        "color": "#9D31FF",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "CHEST": ["MAX_HEALTH", 4.0, 12.0]
+          },
+          {
+            "CHEST": ["GRAVITY", -0.03, -0.01]
+          }
+        ],
+        "particles": [
+          { "type": "sculk_charge_pop", "chance": 0.2 }
+        ]
+      },
+      {
+        "prefix": "Strider",
+        "color": "#FFFFFF",
+        "chance": [0, 15, 15],
+        "attributes": [
+          {
+            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+          },
+          {
+            "LEGS": ["MOVEMENT_SPEED", 0.01, 0.03]
+          }
+        ],
+        "particles": [
+          { "type": "firework", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Prowler",
+        "color": "#808080",
+        "chance": [0, 25, 10],
+        "attributes": [
+          {
+            "LEGS": ["SNEAKING_SPEED", 0.2, 0.4]
+          },
+          {
+            "LEGS": ["ENTITY_INTERACTION_RANGE", 1.0, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "snowflake", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Wind-Walker",
+        "color": "#77CCFF",
+        "chance": [0, 5, 20],
+        "attributes": [
+          {
+            "LEGS": ["FLYING_SPEED", 0.05, 0.15]
+          },
+          {
+            "LEGS": ["MOVEMENT_EFFICIENCY", 0.1, 0.3]
+          }
+        ],
+        "particles": [
+          { "type": "snowflake", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Lead Greaves",
+        "color": "#4444FF",
+        "chance": [0, 10, 30],
+        "attributes": [
+          {
+            "LEGS": ["KNOCKBACK_RESISTANCE", 0.6, 0.9]
+          },
+          {
+            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+          }
+        ],
+        "particles": [
+          { "type": "white_smoke", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Acrobat",
+        "color": "#FF77FF",
+        "chance": [0, 15, 15],
+        "attributes": [
+          {
+            "LEGS": ["JUMP_STRENGTH", 0.2, 0.4]
+          },
+          {
+            "LEGS": ["SAFE_FALL_DISTANCE", 4.0, 8.0]
+          }
+        ],
+        "particles": [
+          { "type": "electric_spark", "chance": 0.02 },
+          { "type": "snowflake", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Galefoot",
+        "color": "#4FF04F",
+        "chance": [0, 30, 10],
+        "attributes": [
+          {
+            "FEET": ["MOVEMENT_SPEED", 0.01, 0.03]
+          },
+          {
+            "FEET": ["MOVEMENT_EFFICIENCY", 0.2, 0.4]
+          }
+        ],
+        "particles": [
+          { "type": "electric_spark", "chance": 0.02 },
+          { "type": "white_smoke", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Currentskin",
+        "color": "#00CED1",
+        "chance": [0, 25, 20],
+        "attributes": [
+          {
+            "FEET": ["WATER_MOVEMENT_EFFICIENCY", 0.5, 0.8]
+          },
+          {
+            "FEET": ["SUBMERGED_MINING_SPEED", 0.3, 0.6]
+          }
+        ],
+        "particles": [
+          { "type": "bubble_pop", "chance": 0.02 },
+          { "type": "current_down", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Magma-Striders",
+        "color": "#FFAA00",
+        "chance": [0, 10, 0],
+        "attributes": [
+          {
+            "FEET": ["BURNING_TIME", -0.5, -0.2]
+          },
+          {
+            "FEET": ["STEP_HEIGHT", 1.0, 1.0]
+          }
+        ],
+        "particles": [
+          { "type": "falling_lava", "chance": 0.01 }
+        ]
+      },
+      {
+        "prefix": "Gravity-Boots",
+        "color": "#55AAFF",
+        "chance": [0, 5, 0],
+        "attributes": [
+          {
+            "FEET": ["GRAVITY", -0.04, -0.02]
+          }
+        ],
+        "particles": [
+          { "type": "firework", "chance": 0.01 }
+        ]
+      },
+      {
+        "prefix": "Titan-Tread",
+        "color": "#FF2222",
+        "chance": [0, 15, 25],
+        "attributes": [
+          {
+            "FEET": ["ATTACK_DAMAGE", 0.5, 1.5]
+          },
+          {
+            "FEET": ["ARMOR", 2.0, 4.0]
+          }
+        ],
+        "particles": [
+          { "type": "white_ash", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Moon-Walkers",
+        "color": "#22FFDD",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "FEET": ["JUMP_STRENGTH", 0.5, 1.0]
+          },
+          {
+            "FEET": ["GRAVITY", -0.05, -0.03]
+          }
+        ],
+        "particles": [
+          { "type": "firework", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "God-King's Plate",
+        "color": "#FFD700",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "CHEST": ["MAX_HEALTH", 4.0, 12.0]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 4.0, 8.0]
+          }
+        ],
+        "particles": [
+          { "type": "trial_spawner_detection", "chance": 0.1 }
+        ]
+      },
+      {
+        "prefix": "Eye of Providence",
+        "color": "#FF77FF",
+        "chance": [0, 1, 5],
+        "attributes": [
+          {
+            "HEAD": ["LUCK", 10.0, 25.0]
+          },
+          {
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 5.0, 10.0]
+          }
+        ],
+        "particles": [
+          { "type": "portal", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Hermes' Dash",
+        "color": "#FFFF55",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "FEET": ["MOVEMENT_SPEED", 0.01, 0.05]
+          },
+          {
+            "FEET": ["MOVEMENT_EFFICIENCY", 1.0, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "firework", "chance": 0.02 },
+          { "type": "electric_spark", "chance": 0.04 },
+          { "type": "white_smoke", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Giant's Wrath",
+        "color": "#FF2222",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "ALL": ["SCALE", 0.05, 0.2]
+          },
+          {
+            "ALL": ["ATTACK_DAMAGE", 2.0, 4.0]
+          }
+        ],
+        "particles": [
+          { "type": "ash", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Dragon-Skin",
+        "color": "#FF3333",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 1.0, 1.0]
+          },
+          {
+            "CHEST": ["ARMOR", 8.0, 12.0]
+          }
+        ],
+        "particles": [
+          { "type": "ash", "chance": 0.02 },
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Midas' Touch",
+        "color": "#FFD700",
+        "chance": [0, 1, 5],
+        "attributes": [
+          {
+            "ALL": ["LUCK", 15.0, 30.0]
+          }
+        ],
+        "particles": [
+          { "type": "wax_on", "chance": 0.02 },
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Colossus",
+        "color": "#808080",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "ALL": ["KNOCKBACK_RESISTANCE", 1.0, 1.0]
+          },
+          {
+            "ALL": ["MAX_ABSORPTION", 10.0, 20.0]
+          }
+        ],
+        "particles": [
+          { "type": "white_ash", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Echoing Soul",
+        "color": "#00CED1",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 4.0, 12.0]
+          },
+          {
+            "ALL": ["SWEEPING_DAMAGE_RATIO", 1.0, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "sculk_soul", "chance": 0.02 },
+          { "type": "sculk_charge_pop", "chance": 0.04 },
+          { "type": "soul_fire_flame", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Beast-Master",
+        "color": "#228B22",
+        "chance": [40, 20, 0],
+        "attributes": [
+          {
+            "HEAD": ["LUCK", 2.0, 4.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Wayfinder",
+        "color": "#22FFDD",
+        "chance": [0, 15, 25],
+        "attributes": [
+          {
+            "LEGS": ["MOVEMENT_SPEED", 0.02, 0.03]
+          }
+        ],
+        "particles": [
+          { "type": "firework", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Shepherd",
+        "color": "#FFFFFF",
+        "chance": [60, 20, 0],
+        "attributes": [
+          {
+            "CHEST": ["MAX_HEALTH", 4.0, 6.0]
+          }
+        ],
+        "particles": [
+          { "type": "heart", "chance": 0.01 }
+        ]
+      },
+      {
+        "prefix": "Sapper",
+        "color": "#808080",
+        "chance": [0, 20, 30],
+        "attributes": [
+          {
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 1.0, 1.0]
+          },
+          {
+            "CHEST": ["ARMOR", 4.0, 6.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.02 },
+          { "type": "white_ash", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Ender-Eye",
+        "color": "#9D31FF",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 2.0, 5.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.02 },
+          { "type": "sculk_charge_pop", "chance": 0.04 },
+          { "type": "trial_spawner_detection_ominous", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Lead-Foot",
+        "color": "#55AAFF",
+        "chance": [0, 20, 25],
+        "attributes": [
+          {
+            "FEET": ["KNOCKBACK_RESISTANCE", 0.8, 1.0]
+          },
+          {
+            "FEET": ["STEP_HEIGHT", 1.0, 1.0]
+          }
+        ]
+      },
+      {
+        "prefix": "Vanguard",
+        "color": "#FF2222",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "HEAD": ["MAX_ABSORPTION", 20.0, 30.0]
+          },
+          {
+            "HEAD": ["LUCK", 5.0, 10.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.02 },
+          { "type": "wax_on", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Glass Wraith",
+        "color": "#FFFFFF",
+        "chance": [0, 1, 5],
+        "attributes": [
+          {
+            "CHEST": ["MOVEMENT_SPEED", 0.02, 0.03]
+          },
+          {
+            "CHEST": ["ATTACK_DAMAGE", 1.5, 3.0]
+          }
+        ],
+        "particles": [
+          { "type": "electric_spark", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Sun-Blind",
+        "color": "#FFFF55",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 6.0, 12.0]
+          },
+          {
+            "HEAD": ["LUCK", 10.0, 20.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.02 },
+          { "type": "electric_spark", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Lead-Heart",
+        "color": "#808080",
+        "chance": [0, 0, 10],
+        "attributes": [
+          {
+            "CHEST": ["KNOCKBACK_RESISTANCE", 1.0, 1.0]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 10.0, 15.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.04 },
+          { "type": "electric_spark", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Abyssal Lung",
+        "color": "#00CED1",
+        "chance": [0, 5, 15],
+        "attributes": [
+          {
+            "HEAD": ["OXYGEN_BONUS", 50.0, 100.0]
+          },
+          {
+            "HEAD": ["WATER_MOVEMENT_EFFICIENCY", 1.0, 1.0]
+          }
+        ],
+        "particles": [
+          { "type": "bubble_pop", "chance": 0.02 },
+          { "type": "bubble", "chance": 0.04 },
+          { "type": "dripping_water", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Giant's Burden",
+        "color": "#FFD700",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "ALL": ["SCALE", 0.05, 0.1]
+          },
+          {
+            "ALL": ["MAX_HEALTH", 4.0, 6.0]
+          },
+          {
+            "ALL": ["ARMOR", 3.0, 8.0]
+          }
+        ],
+        "particles": [
+          { "type": "glow", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Fragmented Soul",
+        "color": "#FF77FF",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "ALL": ["MAX_ABSORPTION", 10.0, 20.0]
+          }
+        ],
+        "particles": [
+          { "type": "soul", "chance": 0.02 },
+          { "type": "enchanted_hit", "chance": 0.04 },
+          { "type": "glow", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Lucky Thief",
+        "color": "#808080",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "HEAD": ["ATTACK_DAMAGE", 1.5, 3.0]
+          },
+          {
+            "HEAD": ["LUCK", 5.0, 10.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Dwarven",
+        "color": "#00AA00",
+        "chance": [1, 15, 25],
+        "attributes": [
+          {
+            "HEAD": ["LUCK", 5.0, 10.0]
+          },
+          {
+            "ALL": ["STEP_HEIGHT", 0.01, 0.05]
+          },
+          {
+            "ALL": ["SCALE", -0.2, -0.1]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 1.0, 5.0]
+          },
+          {
+            "ALL": ["MAX_HEALTH", 2.0, 4.0]
+          },
+          {
+            "CHEST": ["BLOCK_BREAK_SPEED", 1.0, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "mycelium", "chance": 0.02 },
+          { "type": "electric_spark", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Tidecaller",
+        "color": "#55FFFF",
+        "chance": [0, 40, 20],
+        "attributes": [
+          {
+            "ALL": ["OXYGEN_BONUS", 1.0, 3.0]
+          },
+          {
+            "ALL": ["SUBMERGED_MINING_SPEED", 0.2, 0.6]
+          },
+          {
+            "FEET": ["MOVEMENT_SPEED", 0.01, 0.02]
+          },
+          {
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.0, 3.0]
+          }
+        ],
+        "particles": [
+          { "type": "witch", "chance": 0.02 },
+          { "type": "falling_water", "chance": 0.01 },
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Phantom",
+        "color": "#AA00AA",
+        "chance": [0, 10, 15],
+        "attributes": [
+          {
+            "ALL": ["MOVEMENT_SPEED", 0.01, 0.03]
+          },
+          {
+            "LEGS": ["SNEAKING_SPEED", 0.15, 0.35]
+          },
+          {
+            "LEGS": ["STEP_HEIGHT", 0.3, 0.8]
+          },
+          {
+            "FEET": ["SAFE_FALL_DISTANCE", 3.0, 8.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Infernal",
+        "color": "#FF5555",
+        "chance": [0, 20, 25],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 4.0, 10.0]
+          },
+          {
+            "ALL": ["ARMOR", 1.0, 3.0]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 1.0, 3.0]
+          },
+          {
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.05, 0.15]
+          },
+          {
+            "HEAD": ["MAX_ABSORPTION", 2.0, 6.0]
+          }
+        ],
+        "particles": [
+          { "type": "soul_fire_flame", "chance": 0.04 },
+          { "type": "small_flame", "chance": 0.04 },
+          { "type": "trial_spawner_detection", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Enchanted",
+        "color": "#55FF55",
+        "chance": [0, 20, 20],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 2.0, 8.0]
+          },
+          {
+            "ALL": ["MOVEMENT_EFFICIENCY", 0.05, 0.2]
+          },
+          {
+            "LEGS": ["MOVEMENT_SPEED", 0.01, 0.02]
+          },
+          {
+            "HEAD": ["LUCK", 1.0, 3.0]
+          },
+          {
+            "FEET": ["JUMP_STRENGTH", 0.1, 0.3]
+          }
+        ],
+        "particles": [
+          { "type": "sculk_charge_pop", "chance": 0.04 },
+          { "type": "trial_spawner_detection_ominous", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Voidwalker",
+        "color": "#5555FF",
+        "chance": [0, 10, 15],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 6.0, 12.0]
+          },
+          {
+            "ALL": ["ARMOR_TOUGHNESS", 1.0, 4.0]
+          },
+          {
+            "LEGS": ["GRAVITY", -0.04, -0.01]
+          },
+          {
+            "LEGS": ["JUMP_STRENGTH", 0.3, 0.8]
+          },
+          {
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.0, 3.0]
+          }
+        ],
+        "particles": [
+          { "type": "witch", "chance": 0.02 },
+          { "type": "soul_fire_flame", "chance": 0.04 },
+          { "type": "sculk_charge_pop", "chance": 0.04 },
+          { "type": "sculk_soul", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Celestial Guardian",
+        "color": "#FFFF55",
+        "chance": [0, 10, 15],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 8.0, 12.0]
+          },
+          {
+            "ALL": ["ARMOR", 2.0, 4.0]
+          },
+          {
+            "CHEST": ["ARMOR_TOUGHNESS", 2.0, 5.0]
+          },
+          {
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.1, 0.25]
+          },
+          {
+            "HEAD": ["MAX_ABSORPTION", 4.0, 10.0]
+          },
+          {
+            "FEET": ["SAFE_FALL_DISTANCE", 5.0, 12.0]
+          }
+        ],
+        "particles": [
+          { "type": "trial_spawner_detection_ominous", "chance": 0.02 },
+          { "type": "glow", "chance": 0.04 },
+          { "type": "enchanted_hit", "chance": 0.04 },
+          { "type": "reverse_portal", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Runebound",
+        "color": "#FF55FF",
+        "chance": [0, 5, 5],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 6.0, 12.0]
+          },
+          {
+            "ALL": ["ARMOR_TOUGHNESS", 1.5, 4.0]
+          },
+          {
+            "HEAD": ["LUCK", 2.0, 5.0]
+          },
+          {
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.0, 4.0]
+          },
+          {
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.1, 0.3]
+          },
+          {
+            "LEGS": ["MOVEMENT_SPEED", 0.01, 0.03]
+          },
+          {
+            "FEET": ["STEP_HEIGHT", 0.4, 0.9]
+          }
+        ],
+        "particles": [
+          { "type": "trial_spawner_detection_ominous", "chance": 0.02 },
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Abyssal",
+        "color": "#0000AA",
+        "chance": [0, 5, 5],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 8.0, 12.0]
+          },
+          {
+            "ALL": ["ARMOR", 2.0, 5.0]
+          },
+          {
+            "ALL": ["ARMOR_TOUGHNESS", 1.0, 3.0]
+          },
+          {
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.1, 0.4]
+          },
+          {
+            "LEGS": ["GRAVITY", -0.03, -0.01]
+          },
+          {
+            "FEET": ["FALL_DAMAGE_MULTIPLIER", -0.4, -0.15]
+          },
+          {
+            "HEAD": ["MAX_ABSORPTION", 4.0, 8.0]
+          }
+        ],
+        "particles": [
+          { "type": "falling_obsidian_tear", "chance": 0.02 },
+          { "type": "soul_fire_flame", "chance": 0.04 },
+          { "type": "sculk_charge_pop", "chance": 0.04 },
+          { "type": "sculk_soul", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Hero's",
+        "color": "#FFFFE0",
+        "chance": [0, 0, 1],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 6.0, 12.0]
+          },
+          {
+            "ALL": ["ARMOR", 3.0, 6.0]
+          },
+          {
+            "ALL": ["ARMOR_TOUGHNESS", 2.0, 5.0]
+          },
+          {
+            "ALL": ["KNOCKBACK_RESISTANCE", 0.1, 0.25]
+          },
+          {
+            "CHEST": ["MAX_ABSORPTION", 6.0, 14.0]
+          },
+          {
+            "HEAD": ["LUCK", 3.0, 6.0]
+          },
+          {
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 2.0, 5.0]
+          },
+          {
+            "LEGS": ["MOVEMENT_SPEED", 0.01, 0.03]
+          },
+          {
+            "LEGS": ["GRAVITY", -0.05, -0.02]
+          },
+          {
+            "FEET": ["SAFE_FALL_DISTANCE", 8.0, 20.0]
+          },
+          {
+            "FEET": ["JUMP_STRENGTH", 0.5, 1.2]
+          }
+        ],
+        "particles": [
+          { "type": "trial_spawner_detection_ominous", "chance": 0.1 },
+          { "type": "electric_spark", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Rizzler's Regalia",
+        "color": "#FFFF55",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "ALL": ["MAX_HEALTH", 2.0, 12.0]
+          },
+          {
+            "ALL": ["ARMOR", -3.0, -1.0]
+          },
+          {
+            "ALL": ["MAX_ABSORPTION", 2.0, 16.0]
+          },
+          {
+            "ALL": ["LUCK", -2.0, -1.0]
+          },
+          {
+            "ALL": ["BLOCK_INTERACTION_RANGE", 1.0, 2.0]
+          },
+          {
+            "FEET": ["MOVEMENT_SPEED", 0.01, 0.02]
+          }
+        ],
+        "particles": [
+          { "type": "sculk_charge_pop", "chance": 0.1 },
+          { "type": "bubble_pop", "chance": 0.04 }
+        ]
+      }
+    ],
+    "Weapon": [
+      {
+        "prefix": "Worn",
+        "color": "#B0B0B0",
+        "chance": [80, 20, 0],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 0.5, 1.5]
+          }
+        ]
+      },
+      {
+        "prefix": "Brutal",
+        "color": "#AA0000",
+        "chance": [5, 15, 10],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 3.0, 5.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", -0.2, -0.1]
+          }
+        ]
+      },
+      {
+        "prefix": "Swift",
+        "color": "#55FFFF",
+        "chance": [30, 15, 10],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.2, 0.5]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", -1.0, 1.0]
+          }
+        ]
+      },
+      {
+        "prefix": "Legendary",
+        "color": "#FFAA00",
+        "chance": [0, 0, 8],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 6.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4]
+          },
+          {
+            "MAINHAND": ["LUCK", 1.0, 2.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchanted_hit", "chance": 0.05 },
+          { "type": "glow", "chance": 0.03 },
+          { "type": "wax_on", "chance": 0.01 }
+        ]
+      },
+      {
+        "prefix": "Blazing Edge",
+        "color": "#FF5555",
+        "chance": [0, 10, 12],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0]
+          },
+          {
+            "MAINHAND": ["BURNING_TIME", 3.0, 6.0]
+          }
+        ],
+        "particles": [
+          { "type": "flame", "chance": 0.08 },
+          { "type": "small_flame", "chance": 0.05 }
+        ]
+      },
+      {
+        "prefix": "Giant-Slayer",
+        "color": "#FFFF55",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 2.0, 3.0]
+          },
+          {
+            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.0, 2.0]
+          }
+        ]
+      },
+      {
+        "prefix": "Vampiric",
+        "color": "#AA00AA",
+        "chance": [0, 5, 5],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0]
+          },
+          {
+            "MAINHAND": ["MAX_HEALTH", 2.0, 6.0]
+          }
+        ],
+        "particles": [
+          { "type": "infested", "chance": 0.015 },
+          { "type": "raid_omen", "chance": 0.02 },
+          { "type": "enchanted_hit", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Crude",
+        "color": "#B0B0B0",
+        "chance": [80, 20, 0],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 0.5, 1.5]
+          }
+        ]
+      },
+      {
+        "prefix": "Sharp",
+        "color": "#FFFFFF",
+        "chance": [40, 30, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 1.5, 3.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.05, 0.1]
+          }
+        ]
+      },
+      {
+        "prefix": "Heavy",
+        "color": "#0000AA",
+        "chance": [30, 20, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 3.0, 5.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", -0.2, -0.1]
+          },
+          {
+            "MAINHAND": ["ATTACK_KNOCKBACK", 0.2, 0.4]
+          }
+        ]
+      },
+      {
+        "prefix": "Swift II",
+        "color": "#55FFFF",
+        "chance": [25, 20, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.3, 0.6]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", -1.0, 0.5]
+          }
+        ]
+      },
+      {
+        "prefix": "Brutal II",
+        "color": "#AA0000",
+        "chance": [0, 15, 25],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 8.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_KNOCKBACK", 0.5, 1.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", -0.4, -0.2]
+          }
+        ]
+      },
+      {
+        "prefix": "Vampiric II",
+        "color": "#AA00AA",
+        "chance": [0, 5, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["MAX_HEALTH", 4.0, 8.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0]
+          },
+          {
+            "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01]
+          }
+        ],
+        "particles": [
+          { "type": "raid_omen", "chance": 0.07 },
+          { "type": "falling_lava", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Blazing",
+        "color": "#FF5555",
+        "chance": [5, 15, 20],
+        "attributes": [
+          {
+            "MAINHAND": ["BURNING_TIME", 3.0, 6.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 1.0, 3.0]
+          }
+        ],
+        "particles": [
+          { "type": "flame", "chance": 0.07 },
+          { "type": "white_smoke", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Ethereal",
+        "color": "#FF55FF",
+        "chance": [0, 5, 12],
+        "attributes": [
+          {
+            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.5, 3.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0]
+          }
+        ],
+        "particles": [
+          { "type": "soul", "chance": 0.04 },
+          { "type": "reverse_portal", "chance": 0.02 },
+          { "type": "white_ash", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Giant-Slayer II",
+        "color": "#FFFF55",
+        "chance": [0, 10, 20],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 6.0]
+          },
+          {
+            "MAINHAND": ["SCALE", 0.1, 0.2]
+          },
+          {
+            "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01]
+          }
+        ],
+        "particles": [
+          { "type": "ash", "chance": 0.06 },
+          { "type": "enchanted_hit", "chance": 0.03 },
+          { "type": "white_smoke", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Defender",
+        "color": "#5555FF",
+        "chance": [0, 20, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ARMOR", 2.0, 4.0]
+          },
+          {
+            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", -1.0, 1.0]
+          }
+        ],
+        "particles": [
+          { "type": "enchant", "chance": 0.06 },
+          { "type": "enchanted_hit", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Executioner",
+        "color": "#AA0000",
+        "chance": [0, 5, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 8.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", -0.5, -0.3]
+          },
+          {
+            "MAINHAND": ["LUCK", 2.0, 5.0]
+          }
+        ],
+        "particles": [
+          { "type": "ash", "chance": 0.06 },
+          { "type": "enchanted_hit", "chance": 0.03 },
+          { "type": "raid_omen", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Nimble Edge",
+        "color": "#55FF55",
+        "chance": [0, 25, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.02]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.1, 0.3]
+          },
+          {
+            "MAINHAND": ["ATTACK_KNOCKBACK", -0.3, -0.1]
+          }
+        ]
+      },
+      {
+        "prefix": "Cursed Blast",
+        "color": "#AA00AA",
+        "chance": [0, 2, 8],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 10.0]
+          },
+          {
+            "MAINHAND": ["MAX_HEALTH", -10.0, -6.0]
+          },
+          {
+            "MAINHAND": ["EXPLOSION_KNOCKBACK_RESISTANCE", -0.5, -0.2]
+          }
+        ],
+        "particles": [
+          { "type": "sculk_soul", "chance": 0.02 },
+          { "type": "sculk_charge_pop", "chance": 0.01 },
+          { "type": "soul_fire_flame", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Reach",
+        "color": "#FFAA00",
+        "chance": [5, 10, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 2.0, 4.0]
+          },
+          {
+            "MAINHAND": ["BLOCK_INTERACTION_RANGE", 2.0, 4.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0]
+          }
+        ],
+        "particles": [
+          { "type": "nautilus", "chance": 0.04 },
+          { "type": "reverse_portal", "chance": 0.015 }
+        ]
+      },
+      {
+        "prefix": "Gravity Hammer",
+        "color": "#0000AA",
+        "chance": [0, 5, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_KNOCKBACK", 1.5, 3.0]
+          },
+          {
+            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.5, 1.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", -0.3, -0.1]
+          }
+        ],
+        "particles": [
+          { "type": "ash", "chance": 0.06 }
+        ]
+      },
+      {
+        "prefix": "Berserk",
+        "color": "#AA0000",
+        "chance": [0, 10, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 8.0]
+          },
+          {
+            "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03]
+          },
+          {
+            "MAINHAND": ["ARMOR", -4.0, -2.0]
+          }
+        ],
+        "particles": [
+          { "type": "lava", "chance": 0.03 },
+          { "type": "ash", "chance": 0.06 },
+          { "type": "flame", "chance": 0.05 }
+        ]
+      },
+      {
+        "prefix": "Wind Blade",
+        "color": "#55FFFF",
+        "chance": [0, 10, 20],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.5, 0.8]
+          },
+          {
+            "MAINHAND": ["FLYING_SPEED", 0.1, 0.3]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0]
+          }
+        ],
+        "particles": [
+          { "type": "white_ash", "chance": 0.05 },
+          { "type": "splash", "chance": 0.03 },
+          { "type": "electric_spark", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Titanic Edge",
+        "color": "#AA00AA",
+        "chance": [0, 0, 10],
+        "attributes": [
+          {
+            "MAINHAND": ["SCALE", 0.3, 0.5]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 6.0, 10.0]
+          },
+          {
+            "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01]
+          }
+        ],
+        "particles": [
+          { "type": "dust_plume", "chance": 0.05 },
+          { "type": "ash", "chance": 0.05 },
+          { "type": "falling_lava", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Sweeping Cold",
+        "color": "#FFFFFF",
+        "chance": [0, 15, 20],
+        "attributes": [
+          {
+            "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.4, 0.8]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 1.0, 3.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", -0.1, 0.0]
+          }
+        ],
+        "particles": [
+          { "type": "snowflake", "chance": 0.05 },
+          { "type": "white_ash", "chance": 0.04 },
+          { "type": "glow", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Fortune Blade",
+        "color": "#FFFF55",
+        "chance": [0, 10, 25],
+        "attributes": [
+          {
+            "MAINHAND": ["LUCK", 5.0, 10.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 1.0, 3.0]
+          },
+          {
+            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 0.5, 1.5]
+          }
+        ],
+        "particles": [
+          { "type": "glow", "chance": 0.05 },
+          { "type": "composter", "chance": 0.03 },
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Pyromaniac",
+        "color": "#FFAA00",
+        "chance": [0, 10, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["BURNING_TIME", 4.0, 6.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0]
+          },
+          {
+            "MAINHAND": ["MAX_HEALTH", -4.0, -2.0]
+          }
+        ],
+        "particles": [
+          { "type": "flame", "chance": 0.08 },
+          { "type": "lava", "chance": 0.03 },
+          { "type": "small_flame", "chance": 0.05 },
+          { "type": "white_smoke", "chance": 0.02 }
+        ]
+      },
+      {
+        "prefix": "Blade-Dancer",
+        "color": "#FF55FF",
+        "chance": [0, 5, 15],
+        "attributes": [
+          {
+            "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.8, 1.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.4, 0.7]
+          },
+          {
+            "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03]
+          }
+        ],
+        "particles": [
+          { "type": "electric_spark", "chance": 0.04 },
+          { "type": "enchanted_hit", "chance": 0.04 },
+          { "type": "white_ash", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Bloodthirsty",
+        "color": "#FF5555",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 12.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", 0.5, 1.0]
+          },
+          {
+            "MAINHAND": ["MAX_HEALTH", -6.0, -4.0]
+          }
+        ],
+        "particles": [
+          { "type": "squid_ink", "chance": 0.015 },
+          { "type": "falling_lava", "chance": 0.03 },
+          { "type": "enchanted_hit", "chance": 0.04 }
+        ]
+      },
+      {
+        "prefix": "Cursed",
+        "color": "#0000AA",
+        "chance": [0, 0, 5],
+        "attributes": [
+          {
+            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.8, 1.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 8.0, 12.0]
+          },
+          {
+            "MAINHAND": ["STEP_HEIGHT", 1.0, 1.0]
+          }
+        ],
+        "particles": [
+          { "type": "sculk_soul", "chance": 0.025 },
+          { "type": "soul", "chance": 0.04 },
+          { "type": "reverse_portal", "chance": 0.02 },
+          { "type": "white_ash", "chance": 0.03 }
+        ]
+      },
+      {
+        "prefix": "Languid Blade",
+        "color": "#AAAAAA",
+        "chance": [0, 5, 10],
+        "attributes": [
+          {
+            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 16.0]
+          },
+          {
+            "MAINHAND": ["ATTACK_SPEED", -0.8, -0.6]
+          },
+          {
+            "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01]
+          }
+        ],
+        "particles": [
+          { "type": "white_smoke", "chance": 0.05 },
+          { "type": "ash", "chance": 0.04 },
+          { "type": "reverse_portal", "chance": 0.01 }
+        ]
+      }
+    ],
+    "RangeWeapon": [
+      {
+        "prefix": "Common",
+        "color": "#B0B0B0",
+        "chance": [80, 40, 20],
+        "attributes": [{ "MAINHAND": ["ATTACK_DAMAGE", 0.5, 1.0] }]
+      },
+      {
+        "prefix": "Deadeye",
+        "color": "#FFAA00",
+        "chance": [0, 5, 10],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 3.0, 6.0] },
+          { "MAINHAND": ["LUCK", 2.0, 5.0] }
+        ]
+      },
+      {
+        "prefix": "Scout",
+        "color": "#55FF55",
+        "chance": [40, 20, 15],
+        "attributes": [
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
+          { "MAINHAND": ["SNEAKING_SPEED", 0.2, 0.4] }
+        ]
+      },
+      {
+        "prefix": "Heavy Draw",
+        "color": "#555555",
+        "chance": [0, 10, 10],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 6.0, 10.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Common II",
+        "color": "#B0B0B0",
+        "chance": [80, 50, 15],
+        "attributes": [{ "MAINHAND": ["ATTACK_DAMAGE", 0.5, 1.5] }]
+      },
+      {
+        "prefix": "Reinforced",
+        "color": "#FFFFFF",
+        "chance": [40, 30, 20],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.1, 0.2] }
+        ]
+      },
+      {
+        "prefix": "Long-Range",
+        "color": "#55FFFF",
+        "chance": [20, 25, 20],
+        "attributes": [
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 3.0, 6.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 1.0, 2.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Heavy Draw II",
+        "color": "#555555",
+        "chance": [0, 10, 5],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 8.0, 12.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] },
+          { "MAINHAND": ["ATTACK_SPEED", -0.3, -0.1] }
+        ]
+      },
+      {
+        "prefix": "Quick-Pull",
+        "color": "#55FF55",
+        "chance": [0, 10, 10],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_SPEED", 0.4, 0.8] },
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
+          { "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0] }
+        ]
+      },
+      {
+        "prefix": "Deadeye II",
+        "color": "#FFAA00",
+        "chance": [0, 5, 15],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 5.0, 8.0] },
+          { "MAINHAND": ["LUCK", 5.0, 10.0] },
+          { "MAINHAND": ["MAX_HEALTH", -4.0, -2.0] }
+        ]
+      },
+      {
+        "prefix": "Wind-Shot",
+        "color": "#FF55FF",
+        "chance": [0, 10, 20],
+        "attributes": [
+          { "MAINHAND": ["FLYING_SPEED", 0.2, 0.4] },
+          { "MAINHAND": ["MOVEMENT_EFFICIENCY", 0.2, 0.5] },
+          { "MAINHAND": ["GRAVITY", -0.04, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Fire-Storm",
+        "color": "#FF5555",
+        "chance": [5, 15, 20],
+        "attributes": [
+          { "MAINHAND": ["BURNING_TIME", 5.0, 10.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0] }
+        ]
+      },
+      {
+        "prefix": "Skirmisher",
+        "color": "#00AAAA",
+        "chance": [0, 10, 5],
+        "attributes": [
+          { "MAINHAND": ["SNEAKING_SPEED", 0.4, 0.7] },
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
+          { "MAINHAND": ["ARMOR", -2.0, -1.0] }
+        ]
+      },
+      {
+        "prefix": "Ballista",
+        "color": "#AA0000",
+        "chance": [0, 0, 5],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 10.0, 15.0] },
+          { "MAINHAND": ["ATTACK_KNOCKBACK", 1.0, 2.0] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.4, 0.6] }
+        ]
+      },
+      {
+        "prefix": "Huntsman",
+        "color": "#00AA00",
+        "chance": [0, 0, 10],
+        "attributes": [
+          { "MAINHAND": ["FOLLOW_RANGE", 10.0, 20.0] },
+          { "MAINHAND": ["LUCK", 2.0, 4.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] }
+        ]
+      },
+      {
+        "prefix": "Phantom",
+        "color": "#AA00AA",
+        "chance": [0, 2, 10],
+        "attributes": [
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 4.0, 8.0] },
+          { "MAINHAND": ["MAX_HEALTH", -6.0, -4.0] },
+          { "MAINHAND": ["GRAVITY", -0.02, 0.0] }
+        ]
+      },
+      {
+        "prefix": "Steady Hand",
+        "color": "#FFFFFF",
+        "chance": [25, 20, 15],
+        "attributes": [
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.4, 0.8] },
+          { "MAINHAND": ["ATTACK_SPEED", -0.1, 0.1] }
+        ]
+      },
+      {
+        "prefix": "Volley",
+        "color": "#FFFF55",
+        "chance": [0, 8, 15],
+        "attributes": [
+          { "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.5, 1.0] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4] },
+          { "MAINHAND": ["ATTACK_DAMAGE", -3.0, -1.5] }
+        ]
+      },
+      {
+        "prefix": "Siren's Call",
+        "color": "#5555FF",
+        "chance": [0, 5, 12],
+        "attributes": [
+          { "MAINHAND": ["WATER_MOVEMENT_EFFICIENCY", 0.5, 1.0] },
+          { "MAINHAND": ["OXYGEN_BONUS", 2.0, 5.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0] }
+        ]
+      },
+      {
+        "prefix": "Cursed Arrow",
+        "color": "#000000",
+        "chance": [0, 0, 8],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 15.0, 20.0] },
+          { "MAINHAND": ["FALL_DAMAGE_MULTIPLIER", 1.5, 2.5] },
+          { "MAINHAND": ["MAX_HEALTH", -4.0, -2.0] }
+        ]
+      },
+      {
+        "prefix": "Scouter's Bow",
+        "color": "#55FF55",
+        "chance": [15, 20, 10],
+        "attributes": [
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.02] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.0, 2.0] },
+          { "MAINHAND": ["ARMOR", -1.0, -0.5] }
+        ]
+      },
+      {
+        "prefix": "Siege Crossbow",
+        "color": "#555555",
+        "chance": [0, 5, 20],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 6.0, 10.0] },
+          { "MAINHAND": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.5, 1.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Apex",
+        "color": "#FFAA00",
+        "chance": [0, 2, 12],
+        "attributes": [
+          { "MAINHAND": ["MAX_ABSORPTION", 4.0, 8.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 3.0, 5.0] }
+        ]
+      },
+      {
+        "prefix": "Light-String",
+        "color": "#55FFFF",
+        "chance": [20, 20, 20],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_SPEED", 0.5, 1.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", -4.0, -2.0] },
+          { "MAINHAND": ["MOVEMENT_EFFICIENCY", 0.2, 0.4] }
+        ]
+      },
+      {
+        "prefix": "Eye of the Storm",
+        "color": "#55FFFF",
+        "chance": [0, 2, 10],
+        "attributes": [
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 10.0, 20.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] },
+          { "MAINHAND": ["ARMOR", -5.0, -2.0] }
+        ]
+      },
+      {
+        "prefix": "Void-Strung",
+        "color": "#AA00AA",
+        "chance": [0, 1, 5],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 20.0, 30.0] },
+          { "MAINHAND": ["GRAVITY", -0.06, -0.03] },
+          { "MAINHAND": ["MAX_HEALTH", -10.0, -8.0] }
+        ]
+      }
+    ],
+    "MiningTool": [
+      {
+        "prefix": "Common",
+        "color": "#B0B0B0",
+        "chance": [80, 40, 20],
+        "attributes": [{ "MAINHAND": ["MINING_EFFICIENCY", 1.0, 2.0] }]
+      },
+      {
+        "prefix": "Prospector",
+        "color": "#FFAA00",
+        "chance": [0, 10, 15],
+        "attributes": [
+          { "MAINHAND": ["LUCK", 2.0, 4.0] },
+          { "MAINHAND": ["MINING_EFFICIENCY", 3.0, 5.0] }
+        ]
+      },
+      {
+        "prefix": "Swifthand",
+        "color": "#55FFFF",
+        "chance": [0, 15, 15],
+        "attributes": [
+          { "MAINHAND": ["MINING_EFFICIENCY", 4.0, 12.0] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4] }
+        ]
+      },
+      {
+        "prefix": "Deepdigger",
+        "color": "#5555FF",
+        "chance": [0, 10, 10],
+        "attributes": [
+          { "MAINHAND": ["SUBMERGED_MINING_SPEED", 0.5, 1.0] },
+          { "MAINHAND": ["MINING_EFFICIENCY", 5.0, 10.0] }
+        ]
+      },
+      {
+        "prefix": "Lumberjack",
+        "color": "#00AA00",
+        "chance": [40, 20, 20],
+        "attributes": [
+          { "MAINHAND": ["MINING_EFFICIENCY", 1.0, 3.0] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 0.5, 1.5] }
+        ]
+      },
+      {
+        "prefix": "Lumberjack",
+        "color": "#00AA00",
+        "chance": [0, 10, 15],
+        "attributes": [
+          { "MAINHAND": ["MINING_EFFICIENCY", 3.0, 6.0] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 0.5, 1.5] }
+        ]
+      },
+      {
+        "prefix": "Common",
+        "color": "#B0B0B0",
+        "chance": [80, 50, 10],
+        "attributes": [{ "MAINHAND": ["MINING_EFFICIENCY", 1.0, 2.0] }]
+      },
+      {
+        "prefix": "Industrial",
+        "color": "#FFFFFF",
+        "chance": [40, 30, 20],
+        "attributes": [
+          { "MAINHAND": ["MINING_EFFICIENCY", 1.0, 3.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Prospector",
+        "color": "#FFAA00",
+        "chance": [10, 20, 30],
+        "attributes": [
+          { "MAINHAND": ["LUCK", 3.0, 7.0] },
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 1.0, 2.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0] }
+        ]
+      },
+      {
+        "prefix": "Swifthand",
+        "color": "#55FFFF",
+        "chance": [0, 10, 5],
+        "attributes": [
+          { "MAINHAND": ["MINING_EFFICIENCY", 5.0, 12.0] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4] },
+          { "MAINHAND": ["MAX_HEALTH", -2.0, -1.0] }
+        ]
+      },
+      {
+        "prefix": "Deepdigger",
+        "color": "#5555FF",
+        "chance": [15, 25, 30],
+        "attributes": [
+          { "MAINHAND": ["SUBMERGED_MINING_SPEED", 1.0, 2.0] },
+          { "MAINHAND": ["OXYGEN_BONUS", 2.0, 5.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Mountain Mover",
+        "color": "#AA0000",
+        "chance": [0, 10, 5],
+        "attributes": [
+          { "MAINHAND": ["BLOCK_BREAK_SPEED", 2.0, 6.0] },
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 2.0, 4.0] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.3, 0.6] }
+        ]
+      },
+      {
+        "prefix": "Lumberjack II",
+        "color": "#00AA00",
+        "chance": [0, 40, 20],
+        "attributes": [
+          { "MAINHAND": ["MINING_EFFICIENCY", 4.0, 8.0] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.0, 2.0] }
+        ]
+      },
+      {
+        "prefix": "Excavator",
+        "color": "#FFFF55",
+        "chance": [5, 5, 5],
+        "attributes": [
+          { "MAINHAND": ["MINING_EFFICIENCY", 6.0, 12.0] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", -0.3, -0.1] }
+        ]
+      },
+      {
+        "prefix": "Titan Drill",
+        "color": "#AA00AA",
+        "chance": [0, 5, 15],
+        "attributes": [
+          { "MAINHAND": ["SCALE", 0.2, 0.4] },
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 3.0, 8.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Geologist",
+        "color": "#00AAAA",
+        "chance": [20, 30, 15],
+        "attributes": [
+          { "MAINHAND": ["LUCK", 2.0, 4.0] },
+          { "MAINHAND": ["MAX_HEALTH", 2.0, 6.0] }
+        ]
+      },
+      {
+        "prefix": "Shaft-Runner",
+        "color": "#FFFFFF",
+        "chance": [0, 15, 20],
+        "attributes": [
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.02] },
+          { "MAINHAND": ["SNEAKING_SPEED", 0.3, 0.6] },
+          { "MAINHAND": ["ARMOR", -2.0, -1.0] }
+        ]
+      },
+      {
+        "prefix": "Volcanic",
+        "color": "#FF5555",
+        "chance": [0, 15, 15],
+        "attributes": [
+          { "MAINHAND": ["BURNING_TIME", -0.5, -0.2] },
+          { "MAINHAND": ["MINING_EFFICIENCY", 2.0, 6.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0] }
+        ]
+      },
+      {
+        "prefix": "Sonic",
+        "color": "#FF55FF",
+        "chance": [0, 5, 5],
+        "attributes": [
+          { "MAINHAND": ["BLOCK_BREAK_SPEED", 2.0, 6.0] },
+          { "MAINHAND": ["MAX_ABSORPTION", -4.0, -2.0] }
+        ]
+      },
+      {
+        "prefix": "Gravity",
+        "color": "#0000AA",
+        "chance": [0, 8, 10],
+        "attributes": [
+          { "MAINHAND": ["GRAVITY", -0.05, -0.02] },
+          { "MAINHAND": ["JUMP_STRENGTH", 0.2, 0.5] },
+          { "MAINHAND": ["ARMOR", -2.0, -1.0] },
+          { "MAINHAND": ["FALL_DAMAGE_MULTIPLIER", 0.4, 0.7] }
+        ]
+      },
+      {
+        "prefix": "Combat",
+        "color": "#555555",
+        "chance": [20, 20, 10],
+        "attributes": [
+          { "MAINHAND": ["ATTACK_DAMAGE", 3.0, 6.0] },
+          { "MAINHAND": ["ATTACK_KNOCKBACK", 0.5, 1.0] },
+          { "MAINHAND": ["MINING_EFFICIENCY", -2.0, -1.0] }
+        ]
+      },
+      {
+        "prefix": "Treasure Hunter",
+        "color": "#FFAA00",
+        "chance": [0, 0, 10],
+        "attributes": [
+          { "MAINHAND": ["LUCK", 10.0, 15.0] },
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
+          { "MAINHAND": ["MAX_HEALTH", -4.0, -2.0] }
+        ]
+      },
+      {
+        "prefix": "Dwarven",
+        "color": "#00AA00",
+        "chance": [10, 15, 25],
+        "attributes": [
+          { "MAINHAND": ["STEP_HEIGHT", 0.5, 1.0] },
+          { "MAINHAND": ["MINING_EFFICIENCY", 5.0, 10.0] },
+          { "MAINHAND": ["SCALE", -0.1, -0.05] }
+        ]
+      },
+      {
+        "prefix": "Reinforced",
+        "color": "#AAAAAA",
+        "chance": [40, 30, 20],
+        "attributes": [
+          { "MAINHAND": ["ARMOR", 1.0, 3.0] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.2, 0.5] }
+        ]
+      },
+      {
+        "prefix": "Ender-Touch",
+        "color": "#AA00AA",
+        "chance": [0, 5, 15],
+        "attributes": [
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 4.0, 8.0] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 2.0, 4.0] },
+          { "MAINHAND": ["GRAVITY", -0.03, -0.01] }
+        ]
+      },
+      {
+        "prefix": "Light-Weight",
+        "color": "#55FFFF",
+        "chance": [25, 25, 25],
+        "attributes": [
+          { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.02] }
+        ]
+      },
+      {
+        "prefix": "Greed's Edge",
+        "color": "#FFAA00",
+        "chance": [0, 0, 3],
+        "attributes": [
+          { "MAINHAND": ["LUCK", 50.0, 100.0] },
+          { "MAINHAND": ["MINING_EFFICIENCY", -10.0, -5.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", -5.0, -2.0] }
+        ]
+      }
+    ]
+  }
+}

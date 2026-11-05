@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "tierdrop",
+	"version": "${version}",
+	"name": "Tier Drop",
+	"description": "Item drops with tiers!",
+	"authors": [
+		"NiaNPH"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/tierdrop/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nian.tierdrop.TierDrop"
+		],
+		"fabric-datagen": [
+		],
+		"client": [
+
+		]
+	},
+	"mixins": [
+		"tierdrop.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~26.1.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
