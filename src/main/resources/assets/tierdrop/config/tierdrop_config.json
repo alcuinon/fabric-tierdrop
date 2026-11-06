@@ -45,11 +45,13 @@
       "2nd value is chest drop chance",
       "3rd value is Treasure drop"
     ],
-    "effects": "Soon!!"
+    "effects": "Soon!!",
+    "enable_mob_tiers": "TierEquipment.EnableMobTiers turns hostile mob tiers on or off. Default is false."
   },
   "TierEquipment": {
     "ApplyTiersOnCraftedEquipments": false,
     "AllowCraftedEquipmentsToGetHighTiers": false,
+    "EnableMobTiers": false,
     "Test": [
 
     ],
@@ -108,7 +110,7 @@
         "chance": [1, 5, 5],
         "attributes": [
           {
-            "ALL": ["ARMOR", 3.0, 6.0]
+            "ALL": ["ARMOR", 2, 4]
           },
           {
             "ALL": ["MAX_HEALTH", 8.0, 10.0]
@@ -117,7 +119,7 @@
             "HEAD": ["LUCK", 2.0, 3.0]
           },
           {
-            "CHEST": ["ARMOR_TOUGHNESS", 2.0, 4.0]
+            "CHEST": ["ARMOR_TOUGHNESS", 1.5, 3]
           }
         ],
         "particles": [
@@ -131,7 +133,7 @@
         "chance": [0, 10, 10],
         "attributes": [
           {
-            "FEET": ["SAFE_FALL_DISTANCE", 5.0, 12.0]
+            "FEET": ["SAFE_FALL_DISTANCE", 2.5, 6]
           }
         ],
         "particles": [
@@ -176,10 +178,10 @@
         "chance": [0, 10, 10],
         "attributes": [
           {
-            "LEGS": ["SNEAKING_SPEED", 0.15, 0.2]
+            "LEGS": ["SNEAKING_SPEED", 0.11, 0.15]
           },
           {
-            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+            "LEGS": ["STEP_HEIGHT", 0.35, 0.5]
           }
         ],
         "particles": [
@@ -192,10 +194,10 @@
         "chance": [0, 10, 10],
         "attributes": [
           {
-            "FEET": ["WATER_MOVEMENT_EFFICIENCY", 0.3, 0.6]
+            "FEET": ["WATER_MOVEMENT_EFFICIENCY", 0.22, 0.45]
           },
           {
-            "FEET": ["OXYGEN_BONUS", 1.0, 3.0]
+            "FEET": ["OXYGEN_BONUS", 0.56, 0.8]
           }
         ],
         "particles": [
@@ -209,10 +211,10 @@
         "chance": [0, 0, 5],
         "attributes": [
           {
-            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.5, 2.5]
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.2, 2]
           },
           {
-            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.5, 2.5]
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5]
           }
         ],
         "particles": [
@@ -225,10 +227,10 @@
         "chance": [0, 10, 10],
         "attributes": [
           {
-            "CHEST": ["KNOCKBACK_RESISTANCE", 0.2, 0.5]
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
-            "CHEST": ["ARMOR_TOUGHNESS", 2.0, 4.0]
+            "CHEST": ["ARMOR_TOUGHNESS", 1.5, 3]
           }
         ],
         "particles": [
@@ -244,7 +246,7 @@
             "HEAD": ["SCALE", 0.03, 0.05]
           },
           {
-            "CHEST": ["SCALE", 0.15, 0.25]
+            "CHEST": ["SCALE", 0.08, 0.12]
           },
           {
             "LEGS": ["SCALE", 0.03, 0.05]
@@ -259,7 +261,7 @@
             "ALL": ["ATTACK_DAMAGE", 1.0, 2.0]
           },
           {
-            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+            "LEGS": ["STEP_HEIGHT", 0.35, 0.5]
           },
           {
             "FEET": ["MOVEMENT_SPEED", -0.01, -0.01]
@@ -278,7 +280,7 @@
             "ALL": ["ATTACK_DAMAGE", 1.5, 3.0]
           },
           {
-            "ALL": ["ATTACK_SPEED", 0.2, 0.4]
+            "ALL": ["ATTACK_SPEED", 0.18, 0.35]
           },
           {
             "ALL": ["MAX_HEALTH", -4.0, -2.0]
@@ -306,7 +308,7 @@
             "ALL": ["SAFE_FALL_DISTANCE", 4.0, 6.0]
           },
           {
-            "ALL": ["KNOCKBACK_RESISTANCE", -0.5, -0.3]
+            "ALL": ["KNOCKBACK_RESISTANCE", -0.2, -0.14]
           }
         ],
         "particles": [
@@ -319,13 +321,13 @@
         "chance": [0, 5, 20],
         "attributes": [
           {
-            "ALL": ["MAX_ABSORPTION", 4.0, 10.0]
+            "ALL": ["MAX_ABSORPTION", 2.4, 6]
           },
           {
-            "ALL": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.5, 0.8]
+            "ALL": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.24, 0.35]
           },
           {
-            "ALL": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+            "ALL": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           }
         ],
         "particles": [
@@ -338,13 +340,13 @@
         "chance": [0, 25, 10],
         "attributes": [
           {
-            "ALL": ["SNEAKING_SPEED", 0.2, 0.4]
+            "ALL": ["SNEAKING_SPEED", 0.11, 0.15]
           },
           {
-            "ALL": ["FOLLOW_RANGE", -10.0, -5.0]
+            "ALL": ["FOLLOW_RANGE", -6, -3]
           },
           {
-            "ALL": ["STEP_HEIGHT", 0.5, 1.0]
+            "ALL": ["STEP_HEIGHT", 0.35, 0.5]
           }
         ],
         "particles": [
@@ -357,16 +359,16 @@
         "chance": [0, 5, 15],
         "attributes": [
           {
-            "ALL": ["SCALE", 0.05, 0.15]
+            "ALL": ["SCALE", 0.04, 0.12]
           },
           {
             "ALL": ["MAX_HEALTH", 2.0, 8.0]
           },
           {
-            "ALL": ["BLOCK_INTERACTION_RANGE", 1.5, 3.0]
+            "ALL": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5]
           },
           {
-            "ALL": ["ENTITY_INTERACTION_RANGE", 1.5, 2.5]
+            "ALL": ["ENTITY_INTERACTION_RANGE", 1.2, 2]
           }
         ],
         "particles": [
@@ -385,7 +387,7 @@
             "ALL": ["MOVEMENT_SPEED", 0.01, 0.02]
           },
           {
-            "ALL": ["ARMOR_TOUGHNESS", -4.0, -2.0]
+            "ALL": ["ARMOR_TOUGHNESS", -2, -1.4]
           }
         ],
         "particles": [
@@ -402,10 +404,10 @@
             "ALL": ["MAX_HEALTH", 4.0, 12.0]
           },
           {
-            "ALL": ["GRAVITY", -0.03, -0.01]
+            "ALL": ["GRAVITY", -0.02, -0.01]
           },
           {
-            "ALL": ["FALL_DAMAGE_MULTIPLIER", 1.5, 2.0]
+            "ALL": ["FALL_DAMAGE_MULTIPLIER", 0.52, 0.75]
           }
         ],
         "particles": [
@@ -436,10 +438,10 @@
         "chance": [0, 5, 5],
         "attributes": [
           {
-            "HEAD": ["ENTITY_INTERACTION_RANGE", 2.0, 4.0]
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.4, 2]
           },
           {
-            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.0, 2.0]
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 0.75, 1.5]
           }
         ],
         "particles": [
@@ -453,10 +455,10 @@
         "chance": [0, 5, 15],
         "attributes": [
           {
-            "HEAD": ["LUCK", 5.0, 10.0]
+            "HEAD": ["LUCK", 2.8, 4]
           },
           {
-            "HEAD": ["MAX_ABSORPTION", 2.0, 12.0]
+            "HEAD": ["MAX_ABSORPTION", 1, 6]
           }
         ],
         "particles": [
@@ -470,10 +472,10 @@
         "chance": [0, 15, 30],
         "attributes": [
           {
-            "HEAD": ["ARMOR", 3.0, 5.0]
+            "HEAD": ["ARMOR", 2.4, 4]
           },
           {
-            "HEAD": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+            "HEAD": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           }
         ],
         "particles": [
@@ -486,10 +488,10 @@
         "chance": [0, 15, 30],
         "attributes": [
           {
-            "CHEST": ["ARMOR", 6.0, 10.0]
+            "CHEST": ["ARMOR", 2.8, 4]
           },
           {
-            "CHEST": ["KNOCKBACK_RESISTANCE", 0.5, 0.8]
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           }
         ],
         "particles": [
@@ -518,10 +520,10 @@
         "chance": [0, 10, 20],
         "attributes": [
           {
-            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.8, 1.0]
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.24, 0.35]
           },
           {
-            "CHEST": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           }
         ],
         "particles": [
@@ -534,7 +536,7 @@
         "chance": [0, 10, 15],
         "attributes": [
           {
-            "CHEST": ["MAX_ABSORPTION", 6.0, 12.0]
+            "CHEST": ["MAX_ABSORPTION", 4.2, 6]
           },
           {
             "CHEST": ["MAX_HEALTH", 2.0, 4.0]
@@ -553,7 +555,7 @@
             "CHEST": ["MAX_HEALTH", 4.0, 12.0]
           },
           {
-            "CHEST": ["GRAVITY", -0.03, -0.01]
+            "CHEST": ["GRAVITY", -0.02, -0.01]
           }
         ],
         "particles": [
@@ -566,7 +568,7 @@
         "chance": [0, 15, 15],
         "attributes": [
           {
-            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+            "LEGS": ["STEP_HEIGHT", 0.35, 0.5]
           },
           {
             "LEGS": ["MOVEMENT_SPEED", 0.01, 0.03]
@@ -582,7 +584,7 @@
         "chance": [0, 25, 10],
         "attributes": [
           {
-            "LEGS": ["SNEAKING_SPEED", 0.2, 0.4]
+            "LEGS": ["SNEAKING_SPEED", 0.11, 0.15]
           },
           {
             "LEGS": ["ENTITY_INTERACTION_RANGE", 1.0, 2.0]
@@ -614,10 +616,10 @@
         "chance": [0, 10, 30],
         "attributes": [
           {
-            "LEGS": ["KNOCKBACK_RESISTANCE", 0.6, 0.9]
+            "LEGS": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
-            "LEGS": ["STEP_HEIGHT", 0.5, 1.0]
+            "LEGS": ["STEP_HEIGHT", 0.35, 0.5]
           }
         ],
         "particles": [
@@ -630,10 +632,10 @@
         "chance": [0, 15, 15],
         "attributes": [
           {
-            "LEGS": ["JUMP_STRENGTH", 0.2, 0.4]
+            "LEGS": ["JUMP_STRENGTH", 0.14, 0.2]
           },
           {
-            "LEGS": ["SAFE_FALL_DISTANCE", 4.0, 8.0]
+            "LEGS": ["SAFE_FALL_DISTANCE", 3, 6]
           }
         ],
         "particles": [
@@ -664,7 +666,7 @@
         "chance": [0, 25, 20],
         "attributes": [
           {
-            "FEET": ["WATER_MOVEMENT_EFFICIENCY", 0.5, 0.8]
+            "FEET": ["WATER_MOVEMENT_EFFICIENCY", 0.32, 0.45]
           },
           {
             "FEET": ["SUBMERGED_MINING_SPEED", 0.3, 0.6]
@@ -684,7 +686,7 @@
             "FEET": ["BURNING_TIME", -0.5, -0.2]
           },
           {
-            "FEET": ["STEP_HEIGHT", 1.0, 1.0]
+            "FEET": ["STEP_HEIGHT", 0.35, 0.5]
           }
         ],
         "particles": [
@@ -697,7 +699,7 @@
         "chance": [0, 5, 0],
         "attributes": [
           {
-            "FEET": ["GRAVITY", -0.04, -0.02]
+            "FEET": ["GRAVITY", -0.02, -0.01]
           }
         ],
         "particles": [
@@ -726,10 +728,10 @@
         "chance": [0, 0, 5],
         "attributes": [
           {
-            "FEET": ["JUMP_STRENGTH", 0.5, 1.0]
+            "FEET": ["JUMP_STRENGTH", 0.14, 0.2]
           },
           {
-            "FEET": ["GRAVITY", -0.05, -0.03]
+            "FEET": ["GRAVITY", -0.02, -0.01]
           }
         ],
         "particles": [
@@ -745,7 +747,7 @@
             "CHEST": ["MAX_HEALTH", 4.0, 12.0]
           },
           {
-            "CHEST": ["ARMOR_TOUGHNESS", 4.0, 8.0]
+            "CHEST": ["ARMOR_TOUGHNESS", 2.1, 3]
           }
         ],
         "particles": [
@@ -758,10 +760,10 @@
         "chance": [0, 1, 5],
         "attributes": [
           {
-            "HEAD": ["LUCK", 10.0, 25.0]
+            "HEAD": ["LUCK", 2.8, 4]
           },
           {
-            "HEAD": ["ENTITY_INTERACTION_RANGE", 5.0, 10.0]
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.4, 2]
           }
         ],
         "particles": [
@@ -777,7 +779,7 @@
             "FEET": ["MOVEMENT_SPEED", 0.01, 0.05]
           },
           {
-            "FEET": ["MOVEMENT_EFFICIENCY", 1.0, 2.0]
+            "FEET": ["MOVEMENT_EFFICIENCY", 0.28, 0.4]
           }
         ],
         "particles": [
@@ -792,7 +794,7 @@
         "chance": [0, 0, 5],
         "attributes": [
           {
-            "ALL": ["SCALE", 0.05, 0.2]
+            "ALL": ["SCALE", 0.03, 0.12]
           },
           {
             "ALL": ["ATTACK_DAMAGE", 2.0, 4.0]
@@ -808,10 +810,10 @@
         "chance": [0, 5, 10],
         "attributes": [
           {
-            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 1.0, 1.0]
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.24, 0.35]
           },
           {
-            "CHEST": ["ARMOR", 8.0, 12.0]
+            "CHEST": ["ARMOR", 2.8, 4]
           }
         ],
         "particles": [
@@ -825,7 +827,7 @@
         "chance": [0, 1, 5],
         "attributes": [
           {
-            "ALL": ["LUCK", 15.0, 30.0]
+            "ALL": ["LUCK", 2.8, 4]
           }
         ],
         "particles": [
@@ -839,10 +841,10 @@
         "chance": [0, 0, 5],
         "attributes": [
           {
-            "ALL": ["KNOCKBACK_RESISTANCE", 1.0, 1.0]
+            "ALL": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
-            "ALL": ["MAX_ABSORPTION", 10.0, 20.0]
+            "ALL": ["MAX_ABSORPTION", 4.2, 6]
           }
         ],
         "particles": [
@@ -858,7 +860,7 @@
             "ALL": ["MAX_HEALTH", 4.0, 12.0]
           },
           {
-            "ALL": ["SWEEPING_DAMAGE_RATIO", 1.0, 2.0]
+            "ALL": ["SWEEPING_DAMAGE_RATIO", 0.42, 0.6]
           }
         ],
         "particles": [
@@ -912,10 +914,10 @@
         "chance": [0, 20, 30],
         "attributes": [
           {
-            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 1.0, 1.0]
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.24, 0.35]
           },
           {
-            "CHEST": ["ARMOR", 4.0, 6.0]
+            "CHEST": ["ARMOR", 2.8, 4]
           }
         ],
         "particles": [
@@ -929,7 +931,7 @@
         "chance": [0, 5, 10],
         "attributes": [
           {
-            "HEAD": ["BLOCK_INTERACTION_RANGE", 2.0, 5.0]
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5]
           }
         ],
         "particles": [
@@ -944,10 +946,10 @@
         "chance": [0, 20, 25],
         "attributes": [
           {
-            "FEET": ["KNOCKBACK_RESISTANCE", 0.8, 1.0]
+            "FEET": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
-            "FEET": ["STEP_HEIGHT", 1.0, 1.0]
+            "FEET": ["STEP_HEIGHT", 0.35, 0.5]
           }
         ]
       },
@@ -957,10 +959,10 @@
         "chance": [0, 0, 5],
         "attributes": [
           {
-            "HEAD": ["MAX_ABSORPTION", 20.0, 30.0]
+            "HEAD": ["MAX_ABSORPTION", 4.2, 6]
           },
           {
-            "HEAD": ["LUCK", 5.0, 10.0]
+            "HEAD": ["LUCK", 2.8, 4]
           }
         ],
         "particles": [
@@ -990,10 +992,10 @@
         "chance": [0, 5, 10],
         "attributes": [
           {
-            "HEAD": ["ENTITY_INTERACTION_RANGE", 6.0, 12.0]
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.4, 2]
           },
           {
-            "HEAD": ["LUCK", 10.0, 20.0]
+            "HEAD": ["LUCK", 2.8, 4]
           }
         ],
         "particles": [
@@ -1007,10 +1009,10 @@
         "chance": [0, 0, 10],
         "attributes": [
           {
-            "CHEST": ["KNOCKBACK_RESISTANCE", 1.0, 1.0]
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
-            "CHEST": ["ARMOR_TOUGHNESS", 10.0, 15.0]
+            "CHEST": ["ARMOR_TOUGHNESS", 2.1, 3]
           }
         ],
         "particles": [
@@ -1024,10 +1026,10 @@
         "chance": [0, 5, 15],
         "attributes": [
           {
-            "HEAD": ["OXYGEN_BONUS", 50.0, 100.0]
+            "HEAD": ["OXYGEN_BONUS", 0.56, 0.8]
           },
           {
-            "HEAD": ["WATER_MOVEMENT_EFFICIENCY", 1.0, 1.0]
+            "HEAD": ["WATER_MOVEMENT_EFFICIENCY", 0.32, 0.45]
           }
         ],
         "particles": [
@@ -1048,7 +1050,7 @@
             "ALL": ["MAX_HEALTH", 4.0, 6.0]
           },
           {
-            "ALL": ["ARMOR", 3.0, 8.0]
+            "ALL": ["ARMOR", 1.5, 4]
           }
         ],
         "particles": [
@@ -1061,7 +1063,7 @@
         "chance": [0, 5, 10],
         "attributes": [
           {
-            "ALL": ["MAX_ABSORPTION", 10.0, 20.0]
+            "ALL": ["MAX_ABSORPTION", 4.2, 6]
           }
         ],
         "particles": [
@@ -1079,7 +1081,7 @@
             "HEAD": ["ATTACK_DAMAGE", 1.5, 3.0]
           },
           {
-            "HEAD": ["LUCK", 5.0, 10.0]
+            "HEAD": ["LUCK", 2.8, 4]
           }
         ],
         "particles": [
@@ -1092,16 +1094,16 @@
         "chance": [1, 15, 25],
         "attributes": [
           {
-            "HEAD": ["LUCK", 5.0, 10.0]
+            "HEAD": ["LUCK", 2.8, 4]
           },
           {
             "ALL": ["STEP_HEIGHT", 0.01, 0.05]
           },
           {
-            "ALL": ["SCALE", -0.2, -0.1]
+            "ALL": ["SCALE", -0.1, -0.07]
           },
           {
-            "CHEST": ["ARMOR_TOUGHNESS", 1.0, 5.0]
+            "CHEST": ["ARMOR_TOUGHNESS", 0.6, 3]
           },
           {
             "ALL": ["MAX_HEALTH", 2.0, 4.0]
@@ -1121,7 +1123,7 @@
         "chance": [0, 40, 20],
         "attributes": [
           {
-            "ALL": ["OXYGEN_BONUS", 1.0, 3.0]
+            "ALL": ["OXYGEN_BONUS", 0.56, 0.8]
           },
           {
             "ALL": ["SUBMERGED_MINING_SPEED", 0.2, 0.6]
@@ -1130,7 +1132,7 @@
             "FEET": ["MOVEMENT_SPEED", 0.01, 0.02]
           },
           {
-            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.0, 3.0]
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 0.5, 1.5]
           }
         ],
         "particles": [
@@ -1148,13 +1150,13 @@
             "ALL": ["MOVEMENT_SPEED", 0.01, 0.03]
           },
           {
-            "LEGS": ["SNEAKING_SPEED", 0.15, 0.35]
+            "LEGS": ["SNEAKING_SPEED", 0.11, 0.15]
           },
           {
-            "LEGS": ["STEP_HEIGHT", 0.3, 0.8]
+            "LEGS": ["STEP_HEIGHT", 0.19, 0.5]
           },
           {
-            "FEET": ["SAFE_FALL_DISTANCE", 3.0, 8.0]
+            "FEET": ["SAFE_FALL_DISTANCE", 2.25, 6]
           }
         ],
         "particles": [
@@ -1206,7 +1208,7 @@
             "HEAD": ["LUCK", 1.0, 3.0]
           },
           {
-            "FEET": ["JUMP_STRENGTH", 0.1, 0.3]
+            "FEET": ["JUMP_STRENGTH", 0.07, 0.2]
           }
         ],
         "particles": [
@@ -1223,16 +1225,16 @@
             "ALL": ["MAX_HEALTH", 6.0, 12.0]
           },
           {
-            "ALL": ["ARMOR_TOUGHNESS", 1.0, 4.0]
+            "ALL": ["ARMOR_TOUGHNESS", 0.75, 3]
           },
           {
-            "LEGS": ["GRAVITY", -0.04, -0.01]
+            "LEGS": ["GRAVITY", -0.02, 0]
           },
           {
-            "LEGS": ["JUMP_STRENGTH", 0.3, 0.8]
+            "LEGS": ["JUMP_STRENGTH", 0.14, 0.2]
           },
           {
-            "HEAD": ["ENTITY_INTERACTION_RANGE", 1.0, 3.0]
+            "HEAD": ["ENTITY_INTERACTION_RANGE", 0.67, 2]
           }
         ],
         "particles": [
@@ -1254,16 +1256,16 @@
             "ALL": ["ARMOR", 2.0, 4.0]
           },
           {
-            "CHEST": ["ARMOR_TOUGHNESS", 2.0, 5.0]
+            "CHEST": ["ARMOR_TOUGHNESS", 1.2, 3]
           },
           {
-            "CHEST": ["KNOCKBACK_RESISTANCE", 0.1, 0.25]
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.08, 0.2]
           },
           {
-            "HEAD": ["MAX_ABSORPTION", 4.0, 10.0]
+            "HEAD": ["MAX_ABSORPTION", 2.4, 6]
           },
           {
-            "FEET": ["SAFE_FALL_DISTANCE", 5.0, 12.0]
+            "FEET": ["SAFE_FALL_DISTANCE", 2.5, 6]
           }
         ],
         "particles": [
@@ -1282,22 +1284,22 @@
             "ALL": ["MAX_HEALTH", 6.0, 12.0]
           },
           {
-            "ALL": ["ARMOR_TOUGHNESS", 1.5, 4.0]
+            "ALL": ["ARMOR_TOUGHNESS", 1.13, 3]
           },
           {
-            "HEAD": ["LUCK", 2.0, 5.0]
+            "HEAD": ["LUCK", 1.6, 4]
           },
           {
-            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.0, 4.0]
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 0.38, 1.5]
           },
           {
-            "CHEST": ["KNOCKBACK_RESISTANCE", 0.1, 0.3]
+            "CHEST": ["KNOCKBACK_RESISTANCE", 0.07, 0.2]
           },
           {
             "LEGS": ["MOVEMENT_SPEED", 0.01, 0.03]
           },
           {
-            "FEET": ["STEP_HEIGHT", 0.4, 0.9]
+            "FEET": ["STEP_HEIGHT", 0.22, 0.5]
           }
         ],
         "particles": [
@@ -1314,22 +1316,22 @@
             "ALL": ["MAX_HEALTH", 8.0, 12.0]
           },
           {
-            "ALL": ["ARMOR", 2.0, 5.0]
+            "ALL": ["ARMOR", 1.6, 4]
           },
           {
             "ALL": ["ARMOR_TOUGHNESS", 1.0, 3.0]
           },
           {
-            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.1, 0.4]
+            "CHEST": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.09, 0.35]
           },
           {
-            "LEGS": ["GRAVITY", -0.03, -0.01]
+            "LEGS": ["GRAVITY", -0.02, -0.01]
           },
           {
             "FEET": ["FALL_DAMAGE_MULTIPLIER", -0.4, -0.15]
           },
           {
-            "HEAD": ["MAX_ABSORPTION", 4.0, 8.0]
+            "HEAD": ["MAX_ABSORPTION", 3, 6]
           }
         ],
         "particles": [
@@ -1348,34 +1350,34 @@
             "ALL": ["MAX_HEALTH", 6.0, 12.0]
           },
           {
-            "ALL": ["ARMOR", 3.0, 6.0]
+            "ALL": ["ARMOR", 2, 4]
           },
           {
-            "ALL": ["ARMOR_TOUGHNESS", 2.0, 5.0]
+            "ALL": ["ARMOR_TOUGHNESS", 1.2, 3]
           },
           {
-            "ALL": ["KNOCKBACK_RESISTANCE", 0.1, 0.25]
+            "ALL": ["KNOCKBACK_RESISTANCE", 0.08, 0.2]
           },
           {
-            "CHEST": ["MAX_ABSORPTION", 6.0, 14.0]
+            "CHEST": ["MAX_ABSORPTION", 4.2, 6]
           },
           {
-            "HEAD": ["LUCK", 3.0, 6.0]
+            "HEAD": ["LUCK", 2, 4]
           },
           {
-            "HEAD": ["BLOCK_INTERACTION_RANGE", 2.0, 5.0]
+            "HEAD": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5]
           },
           {
             "LEGS": ["MOVEMENT_SPEED", 0.01, 0.03]
           },
           {
-            "LEGS": ["GRAVITY", -0.05, -0.02]
+            "LEGS": ["GRAVITY", -0.02, -0.01]
           },
           {
-            "FEET": ["SAFE_FALL_DISTANCE", 8.0, 20.0]
+            "FEET": ["SAFE_FALL_DISTANCE", 4.2, 6]
           },
           {
-            "FEET": ["JUMP_STRENGTH", 0.5, 1.2]
+            "FEET": ["JUMP_STRENGTH", 0.14, 0.2]
           }
         ],
         "particles": [
@@ -1392,16 +1394,16 @@
             "ALL": ["MAX_HEALTH", 2.0, 12.0]
           },
           {
-            "ALL": ["ARMOR", -3.0, -1.0]
+            "ALL": ["ARMOR", -2, -0.67]
           },
           {
-            "ALL": ["MAX_ABSORPTION", 2.0, 16.0]
+            "ALL": ["MAX_ABSORPTION", 0.75, 6]
           },
           {
             "ALL": ["LUCK", -2.0, -1.0]
           },
           {
-            "ALL": ["BLOCK_INTERACTION_RANGE", 1.0, 2.0]
+            "ALL": ["BLOCK_INTERACTION_RANGE", 0.75, 1.5]
           },
           {
             "FEET": ["MOVEMENT_SPEED", 0.01, 0.02]
@@ -1443,7 +1445,7 @@
         "chance": [30, 15, 10],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_SPEED", 0.2, 0.5]
+            "MAINHAND": ["ATTACK_SPEED", 0.14, 0.35]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", -1.0, 1.0]
@@ -1459,7 +1461,7 @@
             "MAINHAND": ["ATTACK_DAMAGE", 4.0, 6.0]
           },
           {
-            "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4]
+            "MAINHAND": ["ATTACK_SPEED", 0.18, 0.35]
           },
           {
             "MAINHAND": ["LUCK", 1.0, 2.0]
@@ -1480,7 +1482,7 @@
             "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0]
           },
           {
-            "MAINHAND": ["BURNING_TIME", 3.0, 6.0]
+            "MAINHAND": ["BURNING_TIME", 0.7, 1]
           }
         ],
         "particles": [
@@ -1564,7 +1566,7 @@
         "chance": [25, 20, 15],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_SPEED", 0.3, 0.6]
+            "MAINHAND": ["ATTACK_SPEED", 0.18, 0.35]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", -1.0, 0.5]
@@ -1577,7 +1579,7 @@
         "chance": [0, 15, 25],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 8.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 3, 6]
           },
           {
             "MAINHAND": ["ATTACK_KNOCKBACK", 0.5, 1.0]
@@ -1613,7 +1615,7 @@
         "chance": [5, 15, 20],
         "attributes": [
           {
-            "MAINHAND": ["BURNING_TIME", 3.0, 6.0]
+            "MAINHAND": ["BURNING_TIME", 0.7, 1]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", 1.0, 3.0]
@@ -1630,10 +1632,10 @@
         "chance": [0, 5, 12],
         "attributes": [
           {
-            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.5, 3.0]
+            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1, 2]
           },
           {
-            "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4]
+            "MAINHAND": ["ATTACK_SPEED", 0.18, 0.35]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0]
@@ -1654,7 +1656,7 @@
             "MAINHAND": ["ATTACK_DAMAGE", 4.0, 6.0]
           },
           {
-            "MAINHAND": ["SCALE", 0.1, 0.2]
+            "MAINHAND": ["SCALE", 0.06, 0.12]
           },
           {
             "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01]
@@ -1675,7 +1677,7 @@
             "MAINHAND": ["ARMOR", 2.0, 4.0]
           },
           {
-            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.2, 0.4]
+            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", -1.0, 1.0]
@@ -1692,13 +1694,13 @@
         "chance": [0, 5, 15],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 8.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 3, 6]
           },
           {
-            "MAINHAND": ["ATTACK_SPEED", -0.5, -0.3]
+            "MAINHAND": ["ATTACK_SPEED", -0.4, -0.24]
           },
           {
-            "MAINHAND": ["LUCK", 2.0, 5.0]
+            "MAINHAND": ["LUCK", 1.6, 4]
           }
         ],
         "particles": [
@@ -1729,13 +1731,13 @@
         "chance": [0, 2, 8],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 10.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 2.4, 6]
           },
           {
             "MAINHAND": ["MAX_HEALTH", -10.0, -6.0]
           },
           {
-            "MAINHAND": ["EXPLOSION_KNOCKBACK_RESISTANCE", -0.5, -0.2]
+            "MAINHAND": ["EXPLOSION_KNOCKBACK_RESISTANCE", -0.3, -0.12]
           }
         ],
         "particles": [
@@ -1750,10 +1752,10 @@
         "chance": [5, 10, 15],
         "attributes": [
           {
-            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 2.0, 4.0]
+            "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.4, 2]
           },
           {
-            "MAINHAND": ["BLOCK_INTERACTION_RANGE", 2.0, 4.0]
+            "MAINHAND": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0]
@@ -1770,10 +1772,10 @@
         "chance": [0, 5, 15],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_KNOCKBACK", 1.5, 3.0]
+            "MAINHAND": ["ATTACK_KNOCKBACK", 1.05, 1.5]
           },
           {
-            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.5, 1.0]
+            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
             "MAINHAND": ["ATTACK_SPEED", -0.3, -0.1]
@@ -1789,13 +1791,13 @@
         "chance": [0, 10, 15],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 8.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 3, 6]
           },
           {
             "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03]
           },
           {
-            "MAINHAND": ["ARMOR", -4.0, -2.0]
+            "MAINHAND": ["ARMOR", -2, -1.4]
           }
         ],
         "particles": [
@@ -1810,10 +1812,10 @@
         "chance": [0, 10, 20],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_SPEED", 0.5, 0.8]
+            "MAINHAND": ["ATTACK_SPEED", 0.24, 0.35]
           },
           {
-            "MAINHAND": ["FLYING_SPEED", 0.1, 0.3]
+            "MAINHAND": ["FLYING_SPEED", 0.07, 0.2]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0]
@@ -1831,10 +1833,10 @@
         "chance": [0, 0, 10],
         "attributes": [
           {
-            "MAINHAND": ["SCALE", 0.3, 0.5]
+            "MAINHAND": ["SCALE", 0.08, 0.12]
           },
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 6.0, 10.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6]
           },
           {
             "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01]
@@ -1852,7 +1854,7 @@
         "chance": [0, 15, 20],
         "attributes": [
           {
-            "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.4, 0.8]
+            "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.3, 0.6]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", 1.0, 3.0]
@@ -1873,7 +1875,7 @@
         "chance": [0, 10, 25],
         "attributes": [
           {
-            "MAINHAND": ["LUCK", 5.0, 10.0]
+            "MAINHAND": ["LUCK", 2.8, 4]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", 1.0, 3.0]
@@ -1894,7 +1896,7 @@
         "chance": [0, 10, 15],
         "attributes": [
           {
-            "MAINHAND": ["BURNING_TIME", 4.0, 6.0]
+            "MAINHAND": ["BURNING_TIME", 0.7, 1]
           },
           {
             "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0]
@@ -1916,10 +1918,10 @@
         "chance": [0, 5, 15],
         "attributes": [
           {
-            "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.8, 1.0]
+            "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.42, 0.6]
           },
           {
-            "MAINHAND": ["ATTACK_SPEED", 0.4, 0.7]
+            "MAINHAND": ["ATTACK_SPEED", 0.24, 0.35]
           },
           {
             "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03]
@@ -1937,10 +1939,10 @@
         "chance": [0, 5, 10],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 12.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 2, 6]
           },
           {
-            "MAINHAND": ["ATTACK_SPEED", 0.5, 1.0]
+            "MAINHAND": ["ATTACK_SPEED", 0.24, 0.35]
           },
           {
             "MAINHAND": ["MAX_HEALTH", -6.0, -4.0]
@@ -1958,13 +1960,13 @@
         "chance": [0, 0, 5],
         "attributes": [
           {
-            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.8, 1.0]
+            "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.14, 0.2]
           },
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 8.0, 12.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6]
           },
           {
-            "MAINHAND": ["STEP_HEIGHT", 1.0, 1.0]
+            "MAINHAND": ["STEP_HEIGHT", 0.35, 0.5]
           }
         ],
         "particles": [
@@ -1980,10 +1982,10 @@
         "chance": [0, 5, 10],
         "attributes": [
           {
-            "MAINHAND": ["ATTACK_DAMAGE", 4.0, 16.0]
+            "MAINHAND": ["ATTACK_DAMAGE", 1.5, 6]
           },
           {
-            "MAINHAND": ["ATTACK_SPEED", -0.8, -0.6]
+            "MAINHAND": ["ATTACK_SPEED", -0.4, -0.28]
           },
           {
             "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01]
@@ -2009,7 +2011,7 @@
         "chance": [0, 5, 10],
         "attributes": [
           { "MAINHAND": ["ATTACK_DAMAGE", 3.0, 6.0] },
-          { "MAINHAND": ["LUCK", 2.0, 5.0] }
+          { "MAINHAND": ["LUCK", 1.6, 4] }
         ]
       },
       {
@@ -2018,7 +2020,7 @@
         "chance": [40, 20, 15],
         "attributes": [
           { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
-          { "MAINHAND": ["SNEAKING_SPEED", 0.2, 0.4] }
+          { "MAINHAND": ["SNEAKING_SPEED", 0.11, 0.15] }
         ]
       },
       {
@@ -2026,7 +2028,7 @@
         "color": "#555555",
         "chance": [0, 10, 10],
         "attributes": [
-          { "MAINHAND": ["ATTACK_DAMAGE", 6.0, 10.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6] },
           { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
         ]
       },
@@ -2050,7 +2052,7 @@
         "color": "#55FFFF",
         "chance": [20, 25, 20],
         "attributes": [
-          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 3.0, 6.0] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.4, 2] },
           { "MAINHAND": ["ATTACK_DAMAGE", 1.0, 2.0] },
           { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
         ]
@@ -2060,7 +2062,7 @@
         "color": "#555555",
         "chance": [0, 10, 5],
         "attributes": [
-          { "MAINHAND": ["ATTACK_DAMAGE", 8.0, 12.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6] },
           { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] },
           { "MAINHAND": ["ATTACK_SPEED", -0.3, -0.1] }
         ]
@@ -2070,7 +2072,7 @@
         "color": "#55FF55",
         "chance": [0, 10, 10],
         "attributes": [
-          { "MAINHAND": ["ATTACK_SPEED", 0.4, 0.8] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.24, 0.35] },
           { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
           { "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0] }
         ]
@@ -2080,8 +2082,8 @@
         "color": "#FFAA00",
         "chance": [0, 5, 15],
         "attributes": [
-          { "MAINHAND": ["ATTACK_DAMAGE", 5.0, 8.0] },
-          { "MAINHAND": ["LUCK", 5.0, 10.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 3.75, 6] },
+          { "MAINHAND": ["LUCK", 2.8, 4] },
           { "MAINHAND": ["MAX_HEALTH", -4.0, -2.0] }
         ]
       },
@@ -2090,9 +2092,9 @@
         "color": "#FF55FF",
         "chance": [0, 10, 20],
         "attributes": [
-          { "MAINHAND": ["FLYING_SPEED", 0.2, 0.4] },
-          { "MAINHAND": ["MOVEMENT_EFFICIENCY", 0.2, 0.5] },
-          { "MAINHAND": ["GRAVITY", -0.04, -0.01] }
+          { "MAINHAND": ["FLYING_SPEED", 0.14, 0.2] },
+          { "MAINHAND": ["MOVEMENT_EFFICIENCY", 0.16, 0.4] },
+          { "MAINHAND": ["GRAVITY", -0.02, 0] }
         ]
       },
       {
@@ -2100,7 +2102,7 @@
         "color": "#FF5555",
         "chance": [5, 15, 20],
         "attributes": [
-          { "MAINHAND": ["BURNING_TIME", 5.0, 10.0] },
+          { "MAINHAND": ["BURNING_TIME", 0.7, 1] },
           { "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0] }
         ]
       },
@@ -2109,7 +2111,7 @@
         "color": "#00AAAA",
         "chance": [0, 10, 5],
         "attributes": [
-          { "MAINHAND": ["SNEAKING_SPEED", 0.4, 0.7] },
+          { "MAINHAND": ["SNEAKING_SPEED", 0.11, 0.15] },
           { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
           { "MAINHAND": ["ARMOR", -2.0, -1.0] }
         ]
@@ -2119,9 +2121,9 @@
         "color": "#AA0000",
         "chance": [0, 0, 5],
         "attributes": [
-          { "MAINHAND": ["ATTACK_DAMAGE", 10.0, 15.0] },
-          { "MAINHAND": ["ATTACK_KNOCKBACK", 1.0, 2.0] },
-          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.4, 0.6] }
+          { "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6] },
+          { "MAINHAND": ["ATTACK_KNOCKBACK", 0.75, 1.5] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.14, 0.2] }
         ]
       },
       {
@@ -2129,7 +2131,7 @@
         "color": "#00AA00",
         "chance": [0, 0, 10],
         "attributes": [
-          { "MAINHAND": ["FOLLOW_RANGE", 10.0, 20.0] },
+          { "MAINHAND": ["FOLLOW_RANGE", 5.6, 8] },
           { "MAINHAND": ["LUCK", 2.0, 4.0] },
           { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] }
         ]
@@ -2139,7 +2141,7 @@
         "color": "#AA00AA",
         "chance": [0, 2, 10],
         "attributes": [
-          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 4.0, 8.0] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.4, 2] },
           { "MAINHAND": ["MAX_HEALTH", -6.0, -4.0] },
           { "MAINHAND": ["GRAVITY", -0.02, 0.0] }
         ]
@@ -2149,7 +2151,7 @@
         "color": "#FFFFFF",
         "chance": [25, 20, 15],
         "attributes": [
-          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.4, 0.8] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.14, 0.2] },
           { "MAINHAND": ["ATTACK_SPEED", -0.1, 0.1] }
         ]
       },
@@ -2158,8 +2160,8 @@
         "color": "#FFFF55",
         "chance": [0, 8, 15],
         "attributes": [
-          { "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.5, 1.0] },
-          { "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4] },
+          { "MAINHAND": ["SWEEPING_DAMAGE_RATIO", 0.3, 0.6] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.18, 0.35] },
           { "MAINHAND": ["ATTACK_DAMAGE", -3.0, -1.5] }
         ]
       },
@@ -2168,8 +2170,8 @@
         "color": "#5555FF",
         "chance": [0, 5, 12],
         "attributes": [
-          { "MAINHAND": ["WATER_MOVEMENT_EFFICIENCY", 0.5, 1.0] },
-          { "MAINHAND": ["OXYGEN_BONUS", 2.0, 5.0] },
+          { "MAINHAND": ["WATER_MOVEMENT_EFFICIENCY", 0.32, 0.45] },
+          { "MAINHAND": ["OXYGEN_BONUS", 0.56, 0.8] },
           { "MAINHAND": ["ATTACK_DAMAGE", 2.0, 4.0] }
         ]
       },
@@ -2178,8 +2180,8 @@
         "color": "#000000",
         "chance": [0, 0, 8],
         "attributes": [
-          { "MAINHAND": ["ATTACK_DAMAGE", 15.0, 20.0] },
-          { "MAINHAND": ["FALL_DAMAGE_MULTIPLIER", 1.5, 2.5] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6] },
+          { "MAINHAND": ["FALL_DAMAGE_MULTIPLIER", 0.52, 0.75] },
           { "MAINHAND": ["MAX_HEALTH", -4.0, -2.0] }
         ]
       },
@@ -2198,8 +2200,8 @@
         "color": "#555555",
         "chance": [0, 5, 20],
         "attributes": [
-          { "MAINHAND": ["ATTACK_DAMAGE", 6.0, 10.0] },
-          { "MAINHAND": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.5, 1.0] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6] },
+          { "MAINHAND": ["EXPLOSION_KNOCKBACK_RESISTANCE", 0.24, 0.35] },
           { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
         ]
       },
@@ -2208,7 +2210,7 @@
         "color": "#FFAA00",
         "chance": [0, 2, 12],
         "attributes": [
-          { "MAINHAND": ["MAX_ABSORPTION", 4.0, 8.0] },
+          { "MAINHAND": ["MAX_ABSORPTION", 3, 6] },
           { "MAINHAND": ["ATTACK_DAMAGE", 3.0, 5.0] }
         ]
       },
@@ -2217,8 +2219,8 @@
         "color": "#55FFFF",
         "chance": [20, 20, 20],
         "attributes": [
-          { "MAINHAND": ["ATTACK_SPEED", 0.5, 1.0] },
-          { "MAINHAND": ["ATTACK_DAMAGE", -4.0, -2.0] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.24, 0.35] },
+          { "MAINHAND": ["ATTACK_DAMAGE", -3, -1.5] },
           { "MAINHAND": ["MOVEMENT_EFFICIENCY", 0.2, 0.4] }
         ]
       },
@@ -2227,9 +2229,9 @@
         "color": "#55FFFF",
         "chance": [0, 2, 10],
         "attributes": [
-          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 10.0, 20.0] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.4, 2] },
           { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] },
-          { "MAINHAND": ["ARMOR", -5.0, -2.0] }
+          { "MAINHAND": ["ARMOR", -2, -1.4] }
         ]
       },
       {
@@ -2237,8 +2239,8 @@
         "color": "#AA00AA",
         "chance": [0, 1, 5],
         "attributes": [
-          { "MAINHAND": ["ATTACK_DAMAGE", 20.0, 30.0] },
-          { "MAINHAND": ["GRAVITY", -0.06, -0.03] },
+          { "MAINHAND": ["ATTACK_DAMAGE", 4.2, 6] },
+          { "MAINHAND": ["GRAVITY", -0.02, -0.01] },
           { "MAINHAND": ["MAX_HEALTH", -10.0, -8.0] }
         ]
       }
@@ -2264,8 +2266,8 @@
         "color": "#55FFFF",
         "chance": [0, 15, 15],
         "attributes": [
-          { "MAINHAND": ["MINING_EFFICIENCY", 4.0, 12.0] },
-          { "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4] }
+          { "MAINHAND": ["MINING_EFFICIENCY", 2.67, 8] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.18, 0.35] }
         ]
       },
       {
@@ -2273,8 +2275,8 @@
         "color": "#5555FF",
         "chance": [0, 10, 10],
         "attributes": [
-          { "MAINHAND": ["SUBMERGED_MINING_SPEED", 0.5, 1.0] },
-          { "MAINHAND": ["MINING_EFFICIENCY", 5.0, 10.0] }
+          { "MAINHAND": ["SUBMERGED_MINING_SPEED", 0.4, 0.8] },
+          { "MAINHAND": ["MINING_EFFICIENCY", 4, 8] }
         ]
       },
       {
@@ -2315,8 +2317,8 @@
         "color": "#FFAA00",
         "chance": [10, 20, 30],
         "attributes": [
-          { "MAINHAND": ["LUCK", 3.0, 7.0] },
-          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 1.0, 2.0] },
+          { "MAINHAND": ["LUCK", 1.71, 4] },
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 0.75, 1.5] },
           { "MAINHAND": ["ATTACK_DAMAGE", -2.0, -1.0] }
         ]
       },
@@ -2325,8 +2327,8 @@
         "color": "#55FFFF",
         "chance": [0, 10, 5],
         "attributes": [
-          { "MAINHAND": ["MINING_EFFICIENCY", 5.0, 12.0] },
-          { "MAINHAND": ["ATTACK_SPEED", 0.2, 0.4] },
+          { "MAINHAND": ["MINING_EFFICIENCY", 3.33, 8] },
+          { "MAINHAND": ["ATTACK_SPEED", 0.18, 0.35] },
           { "MAINHAND": ["MAX_HEALTH", -2.0, -1.0] }
         ]
       },
@@ -2335,8 +2337,8 @@
         "color": "#5555FF",
         "chance": [15, 25, 30],
         "attributes": [
-          { "MAINHAND": ["SUBMERGED_MINING_SPEED", 1.0, 2.0] },
-          { "MAINHAND": ["OXYGEN_BONUS", 2.0, 5.0] },
+          { "MAINHAND": ["SUBMERGED_MINING_SPEED", 0.56, 0.8] },
+          { "MAINHAND": ["OXYGEN_BONUS", 0.56, 0.8] },
           { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
         ]
       },
@@ -2345,9 +2347,9 @@
         "color": "#AA0000",
         "chance": [0, 10, 5],
         "attributes": [
-          { "MAINHAND": ["BLOCK_BREAK_SPEED", 2.0, 6.0] },
-          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 2.0, 4.0] },
-          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.3, 0.6] }
+          { "MAINHAND": ["BLOCK_BREAK_SPEED", 0.83, 2.5] },
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.14, 0.2] }
         ]
       },
       {
@@ -2364,8 +2366,8 @@
         "color": "#FFFF55",
         "chance": [5, 5, 5],
         "attributes": [
-          { "MAINHAND": ["MINING_EFFICIENCY", 6.0, 12.0] },
-          { "MAINHAND": ["KNOCKBACK_RESISTANCE", -0.3, -0.1] }
+          { "MAINHAND": ["MINING_EFFICIENCY", 4, 8] },
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", -0.2, -0.07] }
         ]
       },
       {
@@ -2373,8 +2375,8 @@
         "color": "#AA00AA",
         "chance": [0, 5, 15],
         "attributes": [
-          { "MAINHAND": ["SCALE", 0.2, 0.4] },
-          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 3.0, 8.0] },
+          { "MAINHAND": ["SCALE", 0.08, 0.12] },
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5] },
           { "MAINHAND": ["MOVEMENT_SPEED", -0.02, -0.01] }
         ]
       },
@@ -2393,7 +2395,7 @@
         "chance": [0, 15, 20],
         "attributes": [
           { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.02] },
-          { "MAINHAND": ["SNEAKING_SPEED", 0.3, 0.6] },
+          { "MAINHAND": ["SNEAKING_SPEED", 0.11, 0.15] },
           { "MAINHAND": ["ARMOR", -2.0, -1.0] }
         ]
       },
@@ -2412,8 +2414,8 @@
         "color": "#FF55FF",
         "chance": [0, 5, 5],
         "attributes": [
-          { "MAINHAND": ["BLOCK_BREAK_SPEED", 2.0, 6.0] },
-          { "MAINHAND": ["MAX_ABSORPTION", -4.0, -2.0] }
+          { "MAINHAND": ["BLOCK_BREAK_SPEED", 0.83, 2.5] },
+          { "MAINHAND": ["MAX_ABSORPTION", -2, -1.4] }
         ]
       },
       {
@@ -2421,8 +2423,8 @@
         "color": "#0000AA",
         "chance": [0, 8, 10],
         "attributes": [
-          { "MAINHAND": ["GRAVITY", -0.05, -0.02] },
-          { "MAINHAND": ["JUMP_STRENGTH", 0.2, 0.5] },
+          { "MAINHAND": ["GRAVITY", -0.02, -0.01] },
+          { "MAINHAND": ["JUMP_STRENGTH", 0.14, 0.2] },
           { "MAINHAND": ["ARMOR", -2.0, -1.0] },
           { "MAINHAND": ["FALL_DAMAGE_MULTIPLIER", 0.4, 0.7] }
         ]
@@ -2442,7 +2444,7 @@
         "color": "#FFAA00",
         "chance": [0, 0, 10],
         "attributes": [
-          { "MAINHAND": ["LUCK", 10.0, 15.0] },
+          { "MAINHAND": ["LUCK", 2.8, 4] },
           { "MAINHAND": ["MOVEMENT_SPEED", 0.01, 0.03] },
           { "MAINHAND": ["MAX_HEALTH", -4.0, -2.0] }
         ]
@@ -2452,8 +2454,8 @@
         "color": "#00AA00",
         "chance": [10, 15, 25],
         "attributes": [
-          { "MAINHAND": ["STEP_HEIGHT", 0.5, 1.0] },
-          { "MAINHAND": ["MINING_EFFICIENCY", 5.0, 10.0] },
+          { "MAINHAND": ["STEP_HEIGHT", 0.35, 0.5] },
+          { "MAINHAND": ["MINING_EFFICIENCY", 4, 8] },
           { "MAINHAND": ["SCALE", -0.1, -0.05] }
         ]
       },
@@ -2463,7 +2465,7 @@
         "chance": [40, 30, 20],
         "attributes": [
           { "MAINHAND": ["ARMOR", 1.0, 3.0] },
-          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.2, 0.5] }
+          { "MAINHAND": ["KNOCKBACK_RESISTANCE", 0.14, 0.2] }
         ]
       },
       {
@@ -2471,9 +2473,9 @@
         "color": "#AA00AA",
         "chance": [0, 5, 15],
         "attributes": [
-          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 4.0, 8.0] },
-          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 2.0, 4.0] },
-          { "MAINHAND": ["GRAVITY", -0.03, -0.01] }
+          { "MAINHAND": ["BLOCK_INTERACTION_RANGE", 1.05, 1.5] },
+          { "MAINHAND": ["ENTITY_INTERACTION_RANGE", 1.4, 2] },
+          { "MAINHAND": ["GRAVITY", -0.02, -0.01] }
         ]
       },
       {
@@ -2489,9 +2491,9 @@
         "color": "#FFAA00",
         "chance": [0, 0, 3],
         "attributes": [
-          { "MAINHAND": ["LUCK", 50.0, 100.0] },
-          { "MAINHAND": ["MINING_EFFICIENCY", -10.0, -5.0] },
-          { "MAINHAND": ["ATTACK_DAMAGE", -5.0, -2.0] }
+          { "MAINHAND": ["LUCK", 2.8, 4] },
+          { "MAINHAND": ["MINING_EFFICIENCY", -4, -2.8] },
+          { "MAINHAND": ["ATTACK_DAMAGE", -3, -1.2] }
         ]
       }
     ]

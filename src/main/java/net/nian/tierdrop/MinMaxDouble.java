@@ -1,9 +1,9 @@
 package net.nian.tierdrop;
 
-import java.util.Random;
+import net.minecraft.util.RandomSource;
 
 /**
- * Represents a min/max range for attribute values, scaled by tier level (1-10).
+ * A min/max attribute range. Higher tiers land closer to {@code max}.
  */
 public class MinMaxDouble {
     public final double min;
@@ -14,18 +14,10 @@ public class MinMaxDouble {
         this.max = max;
     }
 
-    /**
-     * Returns a random value within the sub-range determined by tierLevel (1–10).
-     * Higher tier = values closer to max.
-     */
-    public double getRandom(Random random, int tierLevel) {
+    public double getRandom(RandomSource random, int tierLevel) {
         double range = max - min;
-        double lowerBound = min + (range * (tierLevel * 0.1));
-        double upperBound = min + (range * ((tierLevel + 1) * 0.1));
-
-        upperBound = Math.min(upperBound, max);
-        lowerBound = Math.min(lowerBound, max);
-
+        double lowerBound = Math.min(max, min + (range * (tierLevel * 0.1)));
+        double upperBound = Math.min(max, min + (range * ((tierLevel + 1) * 0.1)));
         return lowerBound + (upperBound - lowerBound) * random.nextDouble();
     }
 }

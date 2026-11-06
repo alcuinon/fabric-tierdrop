@@ -5,50 +5,62 @@ import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
- * Loads tierdrop_config.json from the game config directory,
- * copying the bundled default if it doesn't exist yet.
+ * Loads {@code config/tierdrop_config.json}, copying the bundled default the first time.
  */
-public class TierDropConfigLoader {
+public final class TierDropConfigLoader {
 
+    private static final Gson GSON = new Gson();
     private static final Path CONFIG_PATH = FabricLoader.getInstance()
-            .getConfigDir().resolve("tierdrop_config.json");
+            .getConfigDir()
+            .resolve("tierdrop_config.json");
 
-    public static TierDropConfig config;
+    public static TierDropConfig config = new TierDropConfig();
+
+    private TierDropConfigLoader() {}
 
     public static void loadConfig() {
         try {
-            if (!Files.exists(CONFIG_PATH)) {
-                Files.createDirectories(CONFIG_PATH.getParent());
-                try (InputStream in = TierDropConfigLoader.class.getClassLoader()
-                        .getResourceAsStream("assets/tierdrop/config/tierdrop_config.json")) {
-                    if (in != null) {
-                        try (OutputStream out = Files.newOutputStream(CONFIG_PATH)) {
-                            byte[] buf = new byte[4096];
-                            int read;
-                            while ((read = in.read(buf)) != -1) out.write(buf, 0, read);
-                        }
-                    } else {
-                        TierDrop.LOGGER.error("Default tierdrop_config.json not found in mod jar resources.");
-                    }
+            copyDefaultIfMissing();
+            if (Files.exists(CONFIG_PATH)) {
+                try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
+                    TierDropConfig parsed = GSON.fromJson(reader, TierDropConfig.class);
+                    if (parsed != null) config = parsed;
                 }
             }
-
-            try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
-                config = new Gson().fromJson(reader, TierDropConfig.class);
-            }
-
-            if (config == null) {
-                TierDrop.LOGGER.error("Failed to parse tierdrop_config.json — using empty config.");
-                config = new TierDropConfig();
-            }
-        } catch (IOException e) {
+        } catch (Exception e) {
             TierDrop.LOGGER.error("Error loading tierdrop config", e);
+        }
+
+        if (config == null) config = new TierDropConfig();
+        if (config.tierEquipment == null) config.tierEquipment = new TierDropConfig.TierEquipment();
+        config.tierEquipment.ensureLists();
+        TierConfig.reload();
+    }
+
+    public static TierDropConfig.TierEquipment equipment() {
+        if (config == null || config.tierEquipment == null) {
+            return new TierDropConfig.TierEquipment();
+        }
+        config.tierEquipment.ensureLists();
+        return config.tierEquipment;
+    }
+
+    private static void copyDefaultIfMissing() throws IOException {
+        if (Files.exists(CONFIG_PATH)) return;
+
+        Files.createDirectories(CONFIG_PATH.getParent());
+        try (InputStream in = TierDropConfigLoader.class.getClassLoader()
+                .getResourceAsStream("assets/tierdrop/config/tierdrop_config.json")) {
+            if (in == null) {
+                TierDrop.LOGGER.error("Default tierdrop_config.json not found in mod jar resources.");
+                return;
+            }
+            Files.copy(in, CONFIG_PATH);
         }
     }
 }
